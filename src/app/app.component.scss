@@ -1,0 +1,13 @@
+app-root {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+
+  > *:not(router-outlet) {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}

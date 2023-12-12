@@ -1,0 +1,187 @@
+<div class="flex w-full flex-auto flex-col">
+  <section class="flex flex-col">
+    <img
+      class="absolute inset-0 -z-20"
+      src="assets/background-banner-2.svg"
+      alt="background"
+    />
+    <app-navigation class="mt-16" theme="dark"></app-navigation>
+    <article class="flex flex-1 items-center justify-between mt-18 relative">
+      <div
+        class="absolute h-full w-3/5 bg-zinc-100 rounded-3xl right-0 -z-10"
+      ></div>
+      <div
+        class="absolute h-full w-1/5 bg-orange-50 rounded-3xl left-0 -z-10"
+      ></div>
+
+      <div class="flex flex-col py-14 px-8 w-1/2 prose">
+        <h1 class="text-slate-700 leading-relaxed text-center">
+          پرداخت با خیال آسوده با پلتفرم IBPAY
+        </h1>
+        <p class="text-2xl text-zinc-500 text-center">
+          iBpay مدیریت دسترسی بسیار ویژه و امنی ایجاد نموده تا کلیه مراحل ایجاد
+          پرداخت، تعیین اعتبار ، دریافت امضا ازامضاداران، پرداخت، ایجاد سند
+          پرداخت و اعتبارسنجی اسناد و... را عملیاتی کند.
+        </p>
+        <div class="flex gap-4 items-start">
+          <img src="assets/coin-image.svg" alt="coin" class="m-0" />
+          <div class="grid gap-6">
+            <h2 class="m-0">عملکرد محصول</h2>
+            <p class="m-0"><b>حجم تراکنش ها :</b> +440,000 میلیارد ریال</p>
+            <p class="m-0"><b>تعداد تراکنش ها :</b> +5 میلیون</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-start w-1/2">
+        <img
+          class="w-5/6 z-10"
+          src="assets/dashbord-image-2.svg"
+          alt="Dashboard image"
+        />
+      </div>
+    </article>
+  </section>
+
+  <section class="flex flex-col items-center">
+    <div class="py-5 px-13 rounded-full bg-zinc-100 text-slate-700 font-bold">
+      نحوه عملکرد
+    </div>
+    <div class="grid grid-cols-4 gap-4 w-full mt-12">
+      <button
+        class="bg-gray-50 rounded-xl h-16 w-full font-bold"
+        [ngClass]="{ 'bg-slate-800 text-white': performance === 1 }"
+        (click)="performance = 1"
+      >
+        پرداخت آنلاین
+      </button>
+      <button
+        class="bg-gray-50 rounded-xl h-16 w-full font-bold"
+        [ngClass]="{ 'bg-slate-800 text-white': performance === 2 }"
+        (click)="performance = 2"
+      >
+        جمع آوری امضای دیجیتال
+      </button>
+      <button
+        class="bg-gray-50 rounded-xl h-16 w-full font-bold"
+        [ngClass]="{ 'bg-slate-800 text-white': performance === 3 }"
+        (click)="performance = 3"
+      >
+        استعلام مشتریان
+      </button>
+      <button
+        class="bg-gray-50 rounded-xl h-16 w-full font-bold"
+        [ngClass]="{ 'bg-slate-800 text-white': performance === 4 }"
+        (click)="performance = 4"
+      >
+        ثبت درخواست پرداخت
+      </button>
+    </div>
+    @switch (performance) { @case (1) {
+    <div class="flex items-center justify-between w-full mt-12 p-12">
+      <div class="prose">
+        <h2 class="text-slate-700 leading-relaxed text-center">
+          پرداخت آنلاین
+        </h2>
+        <p class="text-2xl text-zinc-500">
+          یکی از مراحل ایجاد پرداخت در سازمان های گروهی تایید و جمع آوری امضا
+          های اصلی می باشد که دیگر نیازی به انجام کاترهای دستی نیست و از طریق
+          ثبت امضای تاییدکنندگان اصلی این کار را به صورت سیستماتیک انجام می دهد.
+        </p>
+      </div>
+      <img src="assets/online-payment.svg" alt="" />
+    </div>
+    } @case (2) {
+    <div class="flex items-center justify-between w-full mt-12 p-12">
+      <div class="prose">
+        <h2 class="text-slate-700 leading-relaxed text-center">
+          جمع آوری امضای دیجیتال
+        </h2>
+        <p class="text-2xl text-zinc-500">
+          یکی از مراحل ایجاد پرداخت در سازمان های گروهی تایید و جمع آوری امضا
+          های اصلی می باشد که دیگر نیازی به انجام کاترهای دستی نیست و از طریق
+          ثبت امضای تاییدکنندگان اصلی این کار را به صورت سیستماتیک انجام می دهد.
+        </p>
+      </div>
+      <img src="assets/collect-digital-signatures.svg" alt="" />
+    </div>
+    } @case (3) {
+    <div class="flex items-center justify-between w-full mt-12 p-12">
+      <div class="prose">
+        <h2 class="text-slate-700 leading-relaxed text-center">
+          استعلام حساب مشتریان
+        </h2>
+        <p class="text-2xl text-zinc-500">
+          در این پلتفرم با چک کردن و گرفتن استعلام بانکی از جهت درست بودن حساب
+          بانکی مسدود بودن حساب و موجودی حساب های جهت پرداخت در موعد تعیین شده
+          استفاده می کنیم.
+        </p>
+      </div>
+      <img src="assets/customer-inquiries.svg" alt="" />
+    </div>
+    } @case (4) {
+    <div class="flex items-center justify-between w-full mt-12 p-12">
+      <div class="prose">
+        <h2 class="text-slate-700 leading-relaxed text-center">
+          ایجاد سند پرداخت
+        </h2>
+        <p class="text-2xl text-zinc-500">
+          در این پلتفرم امکان ایجاد سند پرداخت به صورت تکی و گروهی امکان پذیر
+          است. همچنین در این پلتفرم اعتبار سنجی بانکی به صورت اتوماتیک انجام می
+          گردد.
+        </p>
+      </div>
+      <img src="assets/forecaster-work-closely.svg" alt="" />
+    </div>
+    } }
+  </section>
+
+  <div class="relative">
+    <img class="absolute inset-0 -z-20" src="assets/line.svg" alt="" />
+    <section class="flex flex-col py-30">
+      <div class="flex justify-between gradient w-full rounded-3xl p-8">
+        <img src="assets/transaction-Image.svg" alt="" class="-mb-8" />
+        <div class="grid p-8 prose">
+          <h1 class="text-white leading-relaxed text-center">
+            پرداخت های گروهی برنامه ریزی شده همراه با مانیتورینگ کامل
+          </h1>
+          <p class="text-white text-opacity-87 text-center">
+            یکی از راهکارها و خدمات شرکت هوشمند ریسک امکان ایجاد پرداخت های مشخص
+            برای سازمان های بزرگ با دپارتمان های متفاوت است.
+          </p>
+          <button
+            class="place-self-end py-5 px-10 rounded-full bg-zinc-100 text-slate-700 font-bold"
+          >
+            جزئیات
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="flex flex-col items-center py-32">
+    <div
+      class="flex justify-between bg-slate-700 w-full rounded-3xl py-12 px-24"
+    >
+      <div class="grid p-8 prose">
+        <h1 class="text-white leading-relaxed text-center">
+          گزارش تاریخچه هوشمند، دسته بندی سوابق تراکنش ها
+        </h1>
+        <p class="text-white text-opacity-87 text-center">
+          در این بخش نمایی کلی از تراکنش ها و گزارشات مالی نمایش داده می شود که
+          به منظور یاری رسانی به شرکت ها و سازمان ها در بحث بودجه بندی پیشرفته و
+          برنامه ریزی کمک می کند.
+        </p>
+        <button
+          class="place-self-center py-5 px-10 rounded-full bg-zinc-100 text-slate-700 font-bold"
+        >
+          درخواست دمو
+        </button>
+      </div>
+      <img src="assets/iphone-history.png" alt="" class="-mt-32" />
+    </div>
+  </section>
+
+  <section class="flex flex-col">
+    <app-footer></app-footer>
+  </section>
+</div>

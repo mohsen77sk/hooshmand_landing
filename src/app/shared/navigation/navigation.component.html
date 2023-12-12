@@ -1,0 +1,64 @@
+<nav class="flex flex-1 items-center justify-between">
+  <div class="flex items-center gap-10">
+    <button
+      class="py-5 px-13 rounded-full font-bold"
+      [ngClass]="{
+        'bg-white': theme === 'light',
+        'bg-slate-700 text-white': theme === 'dark'
+      }"
+    >
+      پنل کاربری
+    </button>
+    <div
+      class="bg-opacity-10 rounded-full"
+      [ngClass]="{
+        'bg-white': theme === 'light',
+        'bg-black': theme === 'dark'
+      }"
+      [routerLink]="['/']"
+    >
+      <button
+        class="transition py-5 px-13 rounded-full font-medium hover:bg-opacity-10"
+        [ngClass]="{
+          'text-white hover:bg-white': theme === 'light',
+          'text-slate-700 hover:bg-black': theme === 'dark'
+        }"
+      >
+        صفحه اصلی
+      </button>
+      <button
+        class="transition py-5 px-13 rounded-full font-medium hover:bg-opacity-10"
+        [ngClass]="{
+          'text-white hover:bg-white': theme === 'light',
+          'text-slate-700 hover:bg-black': theme === 'dark'
+        }"
+      >
+        خدمات و محصولات
+      </button>
+      <button
+        class="transition py-5 px-13 rounded-full font-medium hover:bg-opacity-10"
+        [ngClass]="{
+          'text-white hover:bg-white': theme === 'light',
+          'text-slate-700 hover:bg-black': theme === 'dark'
+        }"
+      >
+        ارتباط با ما
+      </button>
+      <button
+        class="transition py-5 px-13 rounded-full font-medium hover:bg-opacity-10"
+        [ngClass]="{
+          'text-white hover:bg-white': theme === 'light',
+          'text-slate-700 hover:bg-black': theme === 'dark'
+        }"
+      >
+        بیش تر
+      </button>
+    </div>
+  </div>
+  <img
+    src="assets/logo.svg"
+    alt="Logo Hoshmand Risk"
+    width="62.37px"
+    height="62.37px"
+  />
+</nav>

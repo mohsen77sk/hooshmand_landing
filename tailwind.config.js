@@ -1,7 +1,8 @@
+const { join } = require("path");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["./src/**/*.{html,scss,ts}"],
+  content: [join(__dirname, "src/app/**/*.{html,ts}")],
   theme: {
     fontFamily: {
       sans: ["IRANSansX", ...defaultTheme.fontFamily.sans],
