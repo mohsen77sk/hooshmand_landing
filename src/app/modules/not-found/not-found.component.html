@@ -8,18 +8,24 @@
     <app-navigation class="mt-16" theme="dark"></app-navigation>
   </section>
 
-  <section class="flex flex-col text-center mt-16">
-    <span class="text-10xl leading-tight font-bold gradient">۴۰۴</span>
-    <h3 class="text-1xl text-slate-800 font-bold">
-      صفحه مورد نظر شما یافت نشد.
-    </h3>
-    <div class="mt-16">
-      <button
-        class="py-4 px-13 rounded-full bg-slate-700 text-white"
-        [routerLink]="['/']"
-      >
-        صفحه اصلی
-      </button>
+  <section class="flex flex-row">
+    <div class="flex flex-col items-center justify-center w-1/2">
+      <span class="text-148 leading-tight font-bold gradient">404</span>
+      <h3 class="text-1xl text-slate-800 font-bold">صفحه ای یافت نشد</h3>
+      <p class="text-gray-400 mt-8">
+        این صفحه در روند توسعه می باشد و بار گذاری نشده است.
+      </p>
+      <div class="mt-8">
+        <button
+          class="py-4 px-13 rounded-full bg-slate-700 text-white"
+          [routerLink]="['/']"
+        >
+          صفحه اصلی
+        </button>
+      </div>
+    </div>
+    <div class="flex w-1/2">
+      <img src="assets/frame.png" alt="" />
     </div>
   </section>
 
