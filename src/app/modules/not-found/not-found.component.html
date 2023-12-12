@@ -1,0 +1,29 @@
+<div class="flex w-full flex-auto flex-col">
+  <section class="flex flex-col">
+    <img
+      class="absolute inset-0 -z-20 -mt-50"
+      src="assets/background-patterns.svg"
+      alt="background"
+    />
+    <app-navigation class="mt-16" theme="dark"></app-navigation>
+  </section>
+
+  <section class="flex flex-col text-center mt-16">
+    <span class="text-10xl leading-tight font-bold gradient">۴۰۴</span>
+    <h3 class="text-1xl text-slate-800 font-bold">
+      صفحه مورد نظر شما یافت نشد.
+    </h3>
+    <div class="mt-16">
+      <button
+        class="py-4 px-13 rounded-full bg-slate-700 text-white"
+        [routerLink]="['/']"
+      >
+        صفحه اصلی
+      </button>
+    </div>
+  </section>
+
+  <section class="flex flex-col">
+    <app-footer></app-footer>
+  </section>
+</div>

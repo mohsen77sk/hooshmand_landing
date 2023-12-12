@@ -15,7 +15,6 @@
         'bg-white': theme === 'light',
         'bg-black': theme === 'dark'
       }"
-      [routerLink]="['/']"
     >
       <button
         class="transition py-5 px-13 rounded-full font-medium hover:bg-opacity-10"
@@ -23,6 +22,7 @@
           'text-white hover:bg-white': theme === 'light',
           'text-slate-700 hover:bg-black': theme === 'dark'
         }"
+        [routerLink]="['/']"
       >
         صفحه اصلی
       </button>

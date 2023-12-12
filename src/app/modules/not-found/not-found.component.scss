@@ -1,0 +1,9 @@
+section {
+  @apply w-320 m-auto mb-20 xl:w-360;
+}
+
+.gradient {
+  background: linear-gradient(180deg, #c9aa74 17.71%, #2e3b4e 69.27%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
