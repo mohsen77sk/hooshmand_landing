@@ -6,9 +6,134 @@
       alt="background"
     />
     <app-navigation class="mt-16" theme="dark"></app-navigation>
+    <article class="flex flex-1 items-center justify-between mt-18 relative">
+      <div
+        class="absolute h-5/6 w-3/5 bg-zinc-100 rounded-3xl left-0 -z-10"
+      ></div>
+      <div
+        class="absolute h-full w-1/5 gradient rounded-3xl right-0 -z-10"
+      ></div>
+
+      <div class="flex items-center justify-center py-14 w-1/2">
+        <img
+          class="w-4/6 z-10"
+          src="assets/dashbord-image-4.svg"
+          alt="Dashboard image"
+        />
+      </div>
+      <div class="flex items-center justify-center py-14 px-8 w-1/2">
+        <div class="prose">
+          <h1 class="text-slate-700 leading-relaxed text-center">
+            خدمات پرداخت یاری
+          </h1>
+          <p class="text-2xl text-zinc-500 text-center">
+            درگاه پرداخت اینترنتی (IPG) فناوری است که با اتصال ایمن یک وب سایت
+            تجارت الکترونیک یا سرویس آنلاین به شبکه پردازش پرداخت، تراکنش های
+            آنلاین را تسهیل می کند. وظیفه اصلی آن فعال کردن مجوز و پردازش پرداخت
+            های الکترونیکی است و اطمینان حاصل می کند که اطلاعات مالی حساس به طور
+            ایمن بین مشتری، تاجر و پردازشگر پرداخت منتقل می شود.
+          </p>
+        </div>
+      </div>
+    </article>
   </section>
 
-  <section class="flex flex-col"></section>
+  <section class="grid grid-cols-2 place-items-center mt-12">
+    <div class="prose max-w-120">
+      <h2 class="text-slate-700 leading-relaxed text-center">
+        انتقال امن داده ها
+      </h2>
+      <p class="text-zinc-500 text-center">
+        دروازه پرداخت اینترنتی اطلاعات حساس پرداخت مشتری را رمزگذاری می کند تا
+        از انتقال ایمن از طریق اینترنت اطمینان حاصل کند. این رمزگذاری معمولاً با
+        استفاده از فناوری هایی مانند SSL (Secure Socket Layer) یا TLS (Transport
+        Layer Security) انجام می شود.
+      </p>
+    </div>
+    <img src="assets/security-pc.png" alt="" class="w-64 h-64" />
+  </section>
+
+  <section class="grid grid-cols-2 place-items-center relative mt-12">
+    <img src="assets/arrow-1.svg" alt="" class="absolute bottom-0 -mb-8" />
+    <img src="assets/sync-data.png" alt="" class="w-64 h-64" />
+    <div class="prose max-w-120">
+      <h2 class="text-slate-700 leading-relaxed text-center">
+        IPG داده ها را به پردازشگر پرداخت ارسال می کند
+      </h2>
+      <p class="text-zinc-500 text-center">
+        سپس دروازه پرداخت اینترنتی جزئیات تراکنش را به پردازشگر پرداخت ارسال می
+        کند. پردازشگر پرداخت یک موسسه مالی یا یک سرویس شخص ثالث است که مسئول
+        مدیریت تراکنش است.
+      </p>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-2 place-items-center relative mt-12">
+    <img src="assets/arrow-2.svg" alt="" class="absolute top-0 -mt-4" />
+    <img
+      src="assets/arrow-3.svg"
+      alt=""
+      class="absolute bottom-0 -mb-32 -ml-80"
+    />
+    <div class="prose max-w-120">
+      <h2 class="text-slate-700 leading-relaxed text-center">درخواست مجوز</h2>
+      <p class="text-zinc-500 text-center">
+        پردازشگر پرداخت یک درخواست مجوز به بانک مشتری یا صادرکننده کارت اعتباری
+        ارسال می کند تا جزئیات تراکنش را تأیید کند و اطمینان حاصل کند که مشتری
+        دارای وجوه یا اعتبار کافی است.
+      </p>
+    </div>
+    <div class="prose max-w-120">
+      <h2 class="text-slate-700 leading-relaxed text-center">پاسخ مجوز</h2>
+      <p class="text-zinc-500 text-center">
+        بانک یا صادرکننده کارت اعتباری مشتری یک پاسخ مجوز به پردازشگر پرداخت
+        ارسال می کند که نشان می دهد آیا تراکنش تایید یا رد شده است.
+      </p>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 place-items-center relative mt-12">
+    <div class="prose max-w-120">
+      <h2 class="text-slate-700 leading-relaxed text-center">تایید تراکنش</h2>
+      <p class="text-zinc-500 text-center">
+        در صورت تایید تراکنش، پردازشگر پرداخت به درگاه پرداخت اینترنتی اطلاع
+        می‌دهد که به نوبه خود به تاجر اطلاع می‌دهد.
+      </p>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 place-items-center relative mt-12">
+    <img
+      src="assets/arrow-4.svg"
+      alt=""
+      class="absolute top-0 -mt-24 -mr-100"
+    />
+    <img src="assets/check-pc.png" alt="" class="w-64 h-64" />
+  </section>
+
+  <section class="grid grid-cols-2 place-items-center relative mt-12">
+    <img src="assets/arrow-5.svg" alt="" class="absolute top-0" />
+    <div class="prose max-w-120">
+      <h2 class="text-slate-700 leading-relaxed text-center">تکمیل تراکنش</h2>
+      <p class="text-zinc-500 text-center">
+        تاجر معامله را تکمیل می کند و مشتری تأییدیه پرداخت موفقیت آمیز را دریافت
+        می کند.
+      </p>
+    </div>
+    <img src="assets/pay.png" alt="" class="w-50 h-50" />
+  </section>
+
+  <section class="grid grid-cols-2 place-items-center relative">
+    <img src="assets/arrow-6.svg" alt="" class="absolute bottom-0 -mb-12" />
+    <img src="assets/mony.png" alt="" class="w-50 h-50" />
+    <div class="prose max-w-120">
+      <h2 class="text-slate-700 leading-relaxed text-center">تسویه وجوه</h2>
+      <p class="text-zinc-500 text-center">
+        تاجر معامله را تکمیل می کند و مشتری تأییدیه پرداخت موفقیت آمیز را دریافت
+        می کند.
+      </p>
+    </div>
+  </section>
 
   <section class="flex flex-col">
     <app-footer></app-footer>
