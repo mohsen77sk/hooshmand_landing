@@ -1,4 +1,4 @@
-<nav class="flex flex-1 items-center justify-between">
+<nav class="flex flex-1 items-center justify-between z-50">
   <div class="flex items-center gap-10">
     <button
       class="py-5 px-13 rounded-full font-bold"
@@ -27,13 +27,55 @@
         صفحه اصلی
       </button>
       <button
-        class="transition py-5 px-13 rounded-full font-medium hover:bg-opacity-10"
+        class="group dropdown transition py-5 px-13 rounded-full font-medium relative hover:bg-opacity-10"
         [ngClass]="{
           'text-white hover:bg-white': theme === 'light',
           'text-slate-700 hover:bg-black': theme === 'dark'
         }"
       >
         خدمات و محصولات
+        <div
+          class="group-hover:block dropdown-menu absolute top-16 -mr-13 w-full hidden h-auto z-50 backdrop-blur"
+        >
+          <div
+            class="bg-opacity-10 pt-2 rounded-b"
+            [ngClass]="{
+              'bg-white': theme === 'light',
+              'bg-black': theme === 'dark'
+            }"
+          >
+            <button
+              class="transition py-5 px-8 w-full rounded font-medium hover:bg-opacity-10"
+              [ngClass]="{
+                'text-white hover:bg-white': theme === 'light',
+                'text-slate-700 hover:bg-black': theme === 'dark'
+              }"
+              [routerLink]="['/open-banking']"
+            >
+              خدمات بانکداری باز
+            </button>
+            <button
+              class="transition py-5 px-8 w-full rounded font-medium hover:bg-opacity-10"
+              [ngClass]="{
+                'text-white hover:bg-white': theme === 'light',
+                'text-slate-700 hover:bg-black': theme === 'dark'
+              }"
+              [routerLink]="['/assistance-payment']"
+            >
+              خدمات پرداخت یاری
+            </button>
+            <button
+              class="transition py-5 px-8 w-full rounded font-medium hover:bg-opacity-10"
+              [ngClass]="{
+                'text-white hover:bg-white': theme === 'light',
+                'text-slate-700 hover:bg-black': theme === 'dark'
+              }"
+              [routerLink]="['/data-analysis']"
+            >
+              پردازش داده ها
+            </button>
+          </div>
+        </div>
       </button>
       <button
         class="transition py-5 px-13 rounded-full font-medium hover:bg-opacity-10"
