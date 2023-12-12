@@ -49,17 +49,10 @@
     <div class="grid grid-cols-4 gap-4 w-full mt-12">
       <button
         class="bg-gray-50 rounded-xl h-16 w-full font-bold"
-        [ngClass]="{ 'bg-slate-800 text-white': performance === 1 }"
-        (click)="performance = 1"
+        [ngClass]="{ 'bg-slate-800 text-white': performance === 4 }"
+        (click)="performance = 4"
       >
-        پرداخت آنلاین
-      </button>
-      <button
-        class="bg-gray-50 rounded-xl h-16 w-full font-bold"
-        [ngClass]="{ 'bg-slate-800 text-white': performance === 2 }"
-        (click)="performance = 2"
-      >
-        جمع آوری امضای دیجیتال
+        ثبت درخواست پرداخت
       </button>
       <button
         class="bg-gray-50 rounded-xl h-16 w-full font-bold"
@@ -70,10 +63,17 @@
       </button>
       <button
         class="bg-gray-50 rounded-xl h-16 w-full font-bold"
-        [ngClass]="{ 'bg-slate-800 text-white': performance === 4 }"
-        (click)="performance = 4"
+        [ngClass]="{ 'bg-slate-800 text-white': performance === 2 }"
+        (click)="performance = 2"
       >
-        ثبت درخواست پرداخت
+        جمع آوری امضای دیجیتال
+      </button>
+      <button
+        class="bg-gray-50 rounded-xl h-16 w-full font-bold"
+        [ngClass]="{ 'bg-slate-800 text-white': performance === 1 }"
+        (click)="performance = 1"
+      >
+        پرداخت آنلاین
       </button>
     </div>
     @switch (performance) { @case (1) {
