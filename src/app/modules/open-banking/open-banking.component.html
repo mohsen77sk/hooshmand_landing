@@ -77,68 +77,90 @@
       </button>
     </div>
     @switch (performance) { @case (1) {
-    <div class="flex items-center justify-between w-full mt-12 p-12">
-      <div class="prose">
+    <div
+      class="flex flex-col sm:flex-row items-center sm:justify-between w-full mt-12 p-12"
+    >
+      <div class="prose sm:w-2/3 me-6 mb-6 sm:mb-0">
         <h2 class="text-slate-700 leading-relaxed text-center">
           پرداخت آنلاین
         </h2>
-        <p class="text-2xl text-zinc-500">
+        <p class="text-2xl text-center sm:text-justify text-zinc-500">
           پس از جمع آوری امضا ها و تائید پرداخت توسط اشخاص سازمان در یک تائید دو
           مرحله ای پرداخت شما انجام می‌شود.
         </p>
       </div>
-      <img src="assets/online-payment.svg" alt="" />
+      <img src="assets/online-payment.svg" alt="" class="w-1/3 max-h-80" />
     </div>
     } @case (2) {
-    <div class="flex items-center justify-between w-full mt-12 p-12">
-      <div class="prose">
+    <div
+      class="flex flex-col sm:flex-row items-center sm:justify-between w-full mt-12 p-12"
+    >
+      <div class="prose sm:w-2/3 me-6 mb-6 sm:mb-0">
         <h2 class="text-slate-700 leading-relaxed text-center">
           جمع آوری امضای دیجیتال
         </h2>
-        <p class="text-2xl text-zinc-500">
+        <p class="text-2xl text-center sm:text-justify text-zinc-500">
           یکی از مراحل ایجاد پرداخت در سازمان های گروهی تایید و جمع آوری امضا
           های اصلی می باشد که دیگر نیازی به انجام کاترهای دستی نیست و از طریق
           ثبت امضای تاییدکنندگان اصلی این کار را به صورت سیستماتیک انجام می دهد.
         </p>
       </div>
-      <img src="assets/collect-digital-signatures.svg" alt="" />
+      <img
+        src="assets/collect-digital-signatures.svg"
+        alt=""
+        class="w-1/3 max-h-80"
+      />
     </div>
     } @case (3) {
-    <div class="flex items-center justify-between w-full mt-12 p-12">
-      <div class="prose">
+    <div
+      class="flex flex-col sm:flex-row items-center sm:justify-between w-full mt-12 p-12"
+    >
+      <div class="prose sm:w-2/3 me-6 mb-6 sm:mb-0">
         <h2 class="text-slate-700 leading-relaxed text-center">
           استعلام حساب مشتریان
         </h2>
-        <p class="text-2xl text-zinc-500">
+        <p class="text-2xl text-center sm:text-justify text-zinc-500">
           در این پلتفرم با چک کردن و گرفتن استعلام بانکی از جهت درست بودن حساب
           بانکی مسدود بودن حساب و موجودی حساب های جهت پرداخت در موعد تعیین شده
           استفاده می کنیم.
         </p>
       </div>
-      <img src="assets/customer-inquiries.svg" alt="" />
+      <img src="assets/customer-inquiries.svg" alt="" class="w-1/3 max-h-80" />
     </div>
     } @case (4) {
-    <div class="flex items-center justify-between w-full mt-12 p-12">
-      <div class="prose">
+    <div
+      class="flex flex-col sm:flex-row items-center sm:justify-between w-full mt-12 p-12"
+    >
+      <div class="prose sm:w-2/3 me-6 mb-6 sm:mb-0">
         <h2 class="text-slate-700 leading-relaxed text-center">
           ایجاد سند پرداخت
         </h2>
-        <p class="text-2xl text-zinc-500">
+        <p class="text-2xl text-center sm:text-justify text-zinc-500">
           در این پلتفرم امکان ایجاد سند پرداخت به صورت تکی و گروهی امکان پذیر
           است. همچنین در این پلتفرم اعتبار سنجی بانکی به صورت اتوماتیک انجام می
           گردد.
         </p>
       </div>
-      <img src="assets/forecaster-work-closely.svg" alt="" />
+      <img
+        src="assets/forecaster-work-closely.svg"
+        alt=""
+        class="w-1/3 max-h-80"
+      />
     </div>
     } }
   </section>
 
   <div class="relative">
     <img class="absolute inset-0 -z-20" src="assets/line.svg" alt="" />
-    <section class="flex flex-col py-30">
-      <div class="flex justify-between gradient w-full rounded-3xl p-8">
-        <img src="assets/transaction-Image.svg" alt="" class="-mb-8" />
+    <section class="flex flex-col md:py-30">
+      <div
+        class="flex flex-col md:flex-row items-center md:justify-between gradient w-full rounded-3xl p-8"
+      >
+        <img
+          src="assets/transaction-Image.svg"
+          alt=""
+          class="sm:w-2/3 md:w-1/2 -mb-8"
+        />
         <div class="grid p-8 prose">
           <h1 class="text-white leading-relaxed text-center">
             پرداخت های گروهی برنامه ریزی شده همراه با مانیتورینگ کامل
@@ -157,9 +179,9 @@
     </section>
   </div>
 
-  <section class="flex flex-col items-center py-32">
+  <section class="flex flex-col items-center md:py-32">
     <div
-      class="flex justify-between bg-slate-700 w-full rounded-3xl py-12 px-24"
+      class="flex flex-col md:flex-row items-center md:justify-between bg-slate-700 w-full rounded-3xl p-8 md:py-12 md:px-24"
     >
       <div class="grid p-8 prose">
         <h1 class="text-white leading-relaxed text-center">
@@ -176,7 +198,11 @@
           درخواست دمو
         </button>
       </div>
-      <img src="assets/iphone-history.png" alt="" class="-mt-32" />
+      <img
+        src="assets/iphone-history.png"
+        alt=""
+        class="block max-w-60 md:max-w-none md:-mt-32"
+      />
     </div>
   </section>
 
