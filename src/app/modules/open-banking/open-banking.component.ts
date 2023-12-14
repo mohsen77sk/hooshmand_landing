@@ -12,5 +12,5 @@ import { FooterComponent } from '../../shared/footer/footer.component';
   encapsulation: ViewEncapsulation.None,
 })
 export class OpenBankingComponent {
-  performance = 1;
+  performance = 4;
 }
