@@ -1,14 +1,5 @@
 <nav class="flex flex-1 items-center justify-between z-50">
   <div class="flex items-center gap-10">
-    <button
-      class="py-5 px-13 rounded-full font-bold"
-      [ngClass]="{
-        'bg-white': theme === 'light',
-        'bg-slate-700 text-white': theme === 'dark'
-      }"
-    >
-      پنل کاربری
-    </button>
     <div
       class="bg-opacity-10 rounded-full"
       [ngClass]="{
@@ -17,7 +8,7 @@
       }"
     >
       <button
-        class="transition py-5 px-13 rounded-full font-medium hover:bg-opacity-10"
+        class="transition py-4 px-12 rounded-full font-semibold hover:bg-opacity-10"
         [ngClass]="{
           'text-white hover:bg-white': theme === 'light',
           'text-slate-700 hover:bg-black': theme === 'dark'
@@ -27,7 +18,7 @@
         صفحه اصلی
       </button>
       <button
-        class="group dropdown transition py-5 px-13 rounded-full font-medium relative hover:bg-opacity-10"
+        class="group dropdown transition py-4 px-12 rounded-full font-semibold relative hover:bg-opacity-10"
         [ngClass]="{
           'text-white hover:bg-white': theme === 'light',
           'text-slate-700 hover:bg-black': theme === 'dark'
@@ -35,7 +26,7 @@
       >
         خدمات و محصولات
         <div
-          class="group-hover:block dropdown-menu absolute top-16 -mr-13 w-full hidden h-auto z-50 backdrop-blur"
+          class="group-hover:block dropdown-menu absolute top-14 -mr-13 w-full hidden h-auto z-50 backdrop-blur"
         >
           <div
             class="bg-opacity-10 pt-2 rounded-b"
@@ -45,7 +36,7 @@
             }"
           >
             <button
-              class="transition py-5 px-8 w-full rounded font-medium hover:bg-opacity-10"
+              class="transition py-4 px-8 w-full rounded font-semibold hover:bg-opacity-10"
               [ngClass]="{
                 'text-white hover:bg-white': theme === 'light',
                 'text-slate-700 hover:bg-black': theme === 'dark'
@@ -55,7 +46,7 @@
               خدمات بانکداری باز
             </button>
             <button
-              class="transition py-5 px-8 w-full rounded font-medium hover:bg-opacity-10"
+              class="transition py-4 px-8 w-full rounded font-semibold hover:bg-opacity-10"
               [ngClass]="{
                 'text-white hover:bg-white': theme === 'light',
                 'text-slate-700 hover:bg-black': theme === 'dark'
@@ -65,7 +56,7 @@
               خدمات پرداخت یاری
             </button>
             <button
-              class="transition py-5 px-8 w-full rounded font-medium hover:bg-opacity-10"
+              class="transition py-4 px-8 w-full rounded font-semibold hover:bg-opacity-10"
               [ngClass]="{
                 'text-white hover:bg-white': theme === 'light',
                 'text-slate-700 hover:bg-black': theme === 'dark'
@@ -78,7 +69,7 @@
         </div>
       </button>
       <button
-        class="transition py-5 px-13 rounded-full font-medium hover:bg-opacity-10"
+        class="transition py-4 px-12 rounded-full font-semibold hover:bg-opacity-10"
         [ngClass]="{
           'text-white hover:bg-white': theme === 'light',
           'text-slate-700 hover:bg-black': theme === 'dark'
@@ -88,20 +79,25 @@
         ارتباط با ما
       </button>
       <button
-        class="transition py-5 px-13 rounded-full font-medium hover:bg-opacity-10"
+        class="transition py-4 px-12 rounded-full font-semibold hover:bg-opacity-10"
         [ngClass]="{
           'text-white hover:bg-white': theme === 'light',
           'text-slate-700 hover:bg-black': theme === 'dark'
         }"
       >
-        بیش تر
+        درباره ما
       </button>
     </div>
   </div>
-  <img
-    src="assets/logo.svg"
-    alt="Logo Hoshmand Risk"
-    width="62.37px"
-    height="62.37px"
-  />
+  <div class="flex items-center gap-3">
+    <span class="text-2xl font-black leading-6 text-center"
+      >مدیریت ریسک <br />هوشمند ایرانیان</span
+    >
+    <img
+      src="assets/logo.svg"
+      alt="Logo Hoshmand Risk"
+      width="62.37px"
+      height="62.37px"
+    />
+  </div>
 </nav>
