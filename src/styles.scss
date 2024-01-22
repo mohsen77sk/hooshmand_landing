@@ -1,3 +1,92 @@
+/* This injects Tailwind's base styles and any base styles registered by plugins. */
 @tailwind base;
+
+/* This injects additional styles into Tailwind's base styles layer. */
+@layer base {
+  * {
+    /* Text rendering */
+    -o-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -webkit-text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+
+    /* Remove the focus ring */
+    &:focus {
+      outline: none !important;
+    }
+  }
+
+  /* HTML and Body default styles */
+  html,
+  body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 100%;
+    min-height: 100%;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+  }
+
+  /* Font size */
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 0.875rem;
+  }
+
+  /* Stylistic alternates for Inter */
+  body {
+    font-feature-settings: "salt";
+  }
+
+  /* Set the background and foreground colors */
+  body {
+    color: #27272a;
+    background: #f4f4f5;
+  }
+
+  /* Better spacing and border for horizontal rule */
+  hr {
+    margin: 32px 0;
+    border-bottom-width: 1px;
+  }
+
+  /* Make images and videos to take up all the available space */
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+
+  /* Fix: Disabled placeholder color is too faded on Safari */
+  input[disabled] {
+    opacity: 1;
+    -webkit-text-fill-color: currentColor;
+  }
+
+  .text-default {
+    color: #27272a;
+  }
+
+  .text-secondary {
+    color: #71717a;
+  }
+
+  .text-primary {
+    color: #0d9488;
+  }
+
+  .bg-primary {
+    background: #0d9488;
+  }
+}
+
+/* This injects Tailwind's component classes and any component classes registered by plugins. */
 @tailwind components;
+
+/* This injects Tailwind's utilities classes and any utilities classes registered by plugins. */
 @tailwind utilities;
