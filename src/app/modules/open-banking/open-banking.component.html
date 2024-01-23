@@ -6,25 +6,25 @@
       alt="background"
     />
     <app-navigation class="mt-16" theme="dark"></app-navigation>
-    <article class="flex flex-1 items-center justify-between mt-18 relative">
+    <article class="relative mt-18 flex flex-1 items-center justify-between">
       <div
-        class="absolute h-full w-3/5 bg-zinc-100 bg-opacity-75 rounded-3xl right-0 -z-10"
+        class="absolute right-0 -z-10 h-full w-3/5 rounded-3xl bg-zinc-100 bg-opacity-75"
       ></div>
       <div
-        class="absolute h-full w-1/5 bg-slate-700 rounded-3xl left-0 -z-10"
+        class="absolute left-0 -z-10 h-full w-1/5 rounded-3xl bg-slate-700"
       ></div>
 
-      <div class="flex flex-col py-14 px-8 w-1/2 prose">
-        <h1 class="text-slate-700 leading-relaxed text-center">
+      <div class="prose flex w-1/2 flex-col px-8 py-14">
+        <h1 class="text-center leading-relaxed text-slate-700">
           پرداخت با خیال آسوده با پلتفرم IBPAY
         </h1>
-        <p class="text-2xl text-zinc-500 text-justify">
+        <p class="text-justify text-2xl text-zinc-500">
           iBpay مدیریت دسترسی بسیار ویژه و امنی ایجاد نموده تا کلیه مراحل ایجاد
           پرداخت، تعیین اعتبار ، دریافت امضا ازامضاداران، پرداخت، ایجاد سند
           پرداخت و اعتبارسنجی اسناد و... را عملیاتی کند.
         </p>
-        <div class="flex gap-4 items-start">
-          <img src="assets/coin-image.svg" alt="coin" class="m-0 w-16 h-16" />
+        <div class="flex items-start gap-4">
+          <img src="assets/coin-image.svg" alt="coin" class="m-0 h-16 w-16" />
           <div class="grid gap-6">
             <h2 class="m-0">عملکرد محصول</h2>
             <p class="m-0"><b>حجم تراکنش ها :</b> 270 همت</p>
@@ -32,8 +32,8 @@
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-start w-1/2">
-        <div class="bg-white rounded-3xl w-5/6 z-10 p-8 my-8">
+      <div class="flex w-1/2 items-center justify-start">
+        <div class="z-10 my-8 w-5/6 rounded-3xl bg-white p-8">
           <img class="" src="assets/dashbord-image.png" alt="Dashboard image" />
         </div>
       </div>
@@ -41,131 +41,142 @@
   </section>
 
   <section class="flex flex-col items-center">
-    <div class="py-5 px-13 rounded-full bg-zinc-100 text-slate-700 font-bold">
+    <div class="rounded-full bg-zinc-100 px-13 py-5 font-bold text-slate-700">
       نحوه عملکرد
     </div>
-    <div class="grid grid-cols-4 gap-4 w-full mt-12">
+    <div class="mt-12 grid w-full grid-cols-4 gap-4">
       <button
-        class="bg-gray-50 rounded-xl h-16 w-full font-bold"
+        class="h-16 w-full rounded-xl bg-gray-50 font-bold"
         [ngClass]="{ 'bg-slate-800 text-white': performance === 4 }"
         (click)="performance = 4"
       >
         ثبت درخواست پرداخت
       </button>
       <button
-        class="bg-gray-50 rounded-xl h-16 w-full font-bold"
+        class="h-16 w-full rounded-xl bg-gray-50 font-bold"
         [ngClass]="{ 'bg-slate-800 text-white': performance === 3 }"
         (click)="performance = 3"
       >
         اعتبار سنجی پرداخت
       </button>
       <button
-        class="bg-gray-50 rounded-xl h-16 w-full font-bold"
+        class="h-16 w-full rounded-xl bg-gray-50 font-bold"
         [ngClass]="{ 'bg-slate-800 text-white': performance === 2 }"
         (click)="performance = 2"
       >
         جریان گردش کار
       </button>
       <button
-        class="bg-gray-50 rounded-xl h-16 w-full font-bold"
+        class="h-16 w-full rounded-xl bg-gray-50 font-bold"
         [ngClass]="{ 'bg-slate-800 text-white': performance === 1 }"
         (click)="performance = 1"
       >
         پرداخت آنلاین
       </button>
     </div>
-    @switch (performance) { @case (1) {
-    <div
-      class="flex flex-col sm:flex-row items-center sm:justify-between w-full mt-12 p-12"
-    >
-      <div class="prose sm:w-2/3 me-6 mb-6 sm:mb-0">
-        <h2 class="text-slate-700 leading-relaxed text-center">
-          پرداخت آنلاین
-        </h2>
-        <p class="text-2xl text-center sm:text-justify text-zinc-500">
-          پس از جمع آوری امضا ها و تائید پرداخت توسط اشخاص سازمان در یک تائید دو
-          مرحله ای پرداخت شما انجام می‌شود.
-        </p>
-      </div>
-      <img src="assets/online-payment.svg" alt="" class="w-1/3 max-h-80" />
-    </div>
-    } @case (2) {
-    <div
-      class="flex flex-col sm:flex-row items-center sm:justify-between w-full mt-12 p-12"
-    >
-      <div class="prose sm:w-2/3 me-6 mb-6 sm:mb-0">
-        <h2 class="text-slate-700 leading-relaxed text-center">
-          مدیریت جریان گردش کار
-        </h2>
-        <p class="text-2xl text-center sm:text-justify text-zinc-500">
-          جریان کاری یا گردش کار روشی است که فرایندهای کسب و کارها را اتوماسیون
-          و خودکار می کند. هدف از طراحی و ایجاد جریان کاری در سازمان ها مشارکت
-          کارکنان در انجام پرداخت است . از امکانات مهم سامانه iBpay امکان تعریف
-          جریان گردش کار و مراحل تایید دستور پرداخت براساس نیاز هر مجموعه هست.
-        </p>
-      </div>
-      <img
-        src="assets/collect-digital-signatures.svg"
-        alt=""
-        class="w-1/3 max-h-80"
-      />
-    </div>
-    } @case (3) {
-    <div
-      class="flex flex-col sm:flex-row items-center sm:justify-between w-full mt-12 p-12"
-    >
-      <div class="prose sm:w-2/3 me-6 mb-6 sm:mb-0">
-        <h2 class="text-slate-700 leading-relaxed text-center">
-          اعتبارسنجی پرداخت
-        </h2>
-        <p class="text-2xl text-center sm:text-justify text-zinc-500">
-          تمامی فرایند احراز هویت مشتری توسط هوش مصنوعی انجام می شود و افرادی که
-          نام و نام خانوادگی شماره حساب شماره شبا و کدملی آنها اشتباه یا برای
-          اشخاص دیگری باشد اعلام می کند و شما می توانید در صورت وجود هرگونه
-          مغایرت آن را حذف یا اصلاح نمایید . در حقیقت تاکنون هیچ سرویس تطبیق
-          شماره ملی با شماره حساب در بانک ارایه نشده است ولی تطبیق اسامی دریافتی
-          با اسامی ثبت شده توسط کاربر از طریق هوش مصنوعی فراهم شده است.
-        </p>
-      </div>
-      <img src="assets/customer-inquiries.svg" alt="" class="w-1/3 max-h-80" />
-    </div>
-    } @case (4) {
-    <div
-      class="flex flex-col sm:flex-row items-center sm:justify-between w-full mt-12 p-12"
-    >
-      <div class="prose sm:w-2/3 me-6 mb-6 sm:mb-0">
-        <h2 class="text-slate-700 leading-relaxed text-center">
-          ایجاد سند پرداخت
-        </h2>
-        <p class="text-2xl text-center sm:text-justify text-zinc-500">
-          دغدغه تمامی مدیران و کارشناسان مالی انجام به موقع پرداخت ها در طول روز
-          است. در سامانه iBpay قابلیت ایجاد پرداخت ها به صورت تکی و گروهی وجود
-          دارد و می تواند تمامی پرداخت ها اعم از ساتنا و پایا و تراکنش های داخلی
-          را انجام دهد. با iBpay محدودیت سقف پرداخت به طور کامل حل شده و در هر
-          زمان و مکانی امکان انجام پرداخت ها به صورت تکی و در قالب دسته نا محدود
-          در کسری از زمان قابل پرداخت می باشد.
-        </p>
-      </div>
-      <img
-        src="assets/forecaster-work-closely.svg"
-        alt=""
-        class="w-1/3 max-h-80"
-      />
-    </div>
-    } }
+    @switch (performance) {
+      @case (1) {
+        <div
+          class="mt-12 flex w-full flex-col items-center p-12 sm:flex-row sm:justify-between"
+        >
+          <div class="prose mb-6 me-6 sm:mb-0 sm:w-2/3">
+            <h2 class="text-center leading-relaxed text-slate-700">
+              پرداخت آنلاین
+            </h2>
+            <p class="text-center text-2xl text-zinc-500 sm:text-justify">
+              پس از جمع آوری امضا ها و تائید پرداخت توسط اشخاص سازمان در یک
+              تائید دو مرحله ای پرداخت شما انجام می‌شود.
+            </p>
+          </div>
+          <img src="assets/online-payment.svg" alt="" class="max-h-80 w-1/3" />
+        </div>
+      }
+      @case (2) {
+        <div
+          class="mt-12 flex w-full flex-col items-center p-12 sm:flex-row sm:justify-between"
+        >
+          <div class="prose mb-6 me-6 sm:mb-0 sm:w-2/3">
+            <h2 class="text-center leading-relaxed text-slate-700">
+              مدیریت جریان گردش کار
+            </h2>
+            <p class="text-center text-2xl text-zinc-500 sm:text-justify">
+              جریان کاری یا گردش کار روشی است که فرایندهای کسب و کارها را
+              اتوماسیون و خودکار می کند. هدف از طراحی و ایجاد جریان کاری در
+              سازمان ها مشارکت کارکنان در انجام پرداخت است . از امکانات مهم
+              سامانه iBpay امکان تعریف جریان گردش کار و مراحل تایید دستور پرداخت
+              براساس نیاز هر مجموعه هست.
+            </p>
+          </div>
+          <img
+            src="assets/collect-digital-signatures.svg"
+            alt=""
+            class="max-h-80 w-1/3"
+          />
+        </div>
+      }
+      @case (3) {
+        <div
+          class="mt-12 flex w-full flex-col items-center p-12 sm:flex-row sm:justify-between"
+        >
+          <div class="prose mb-6 me-6 sm:mb-0 sm:w-2/3">
+            <h2 class="text-center leading-relaxed text-slate-700">
+              اعتبارسنجی پرداخت
+            </h2>
+            <p class="text-center text-2xl text-zinc-500 sm:text-justify">
+              تمامی فرایند احراز هویت مشتری توسط هوش مصنوعی انجام می شود و
+              افرادی که نام و نام خانوادگی شماره حساب شماره شبا و کدملی آنها
+              اشتباه یا برای اشخاص دیگری باشد اعلام می کند و شما می توانید در
+              صورت وجود هرگونه مغایرت آن را حذف یا اصلاح نمایید . در حقیقت
+              تاکنون هیچ سرویس تطبیق شماره ملی با شماره حساب در بانک ارایه نشده
+              است ولی تطبیق اسامی دریافتی با اسامی ثبت شده توسط کاربر از طریق
+              هوش مصنوعی فراهم شده است.
+            </p>
+          </div>
+          <img
+            src="assets/customer-inquiries.svg"
+            alt=""
+            class="max-h-80 w-1/3"
+          />
+        </div>
+      }
+      @case (4) {
+        <div
+          class="mt-12 flex w-full flex-col items-center p-12 sm:flex-row sm:justify-between"
+        >
+          <div class="prose mb-6 me-6 sm:mb-0 sm:w-2/3">
+            <h2 class="text-center leading-relaxed text-slate-700">
+              ایجاد سند پرداخت
+            </h2>
+            <p class="text-center text-2xl text-zinc-500 sm:text-justify">
+              دغدغه تمامی مدیران و کارشناسان مالی انجام به موقع پرداخت ها در طول
+              روز است. در سامانه iBpay قابلیت ایجاد پرداخت ها به صورت تکی و
+              گروهی وجود دارد و می تواند تمامی پرداخت ها اعم از ساتنا و پایا و
+              تراکنش های داخلی را انجام دهد. با iBpay محدودیت سقف پرداخت به طور
+              کامل حل شده و در هر زمان و مکانی امکان انجام پرداخت ها به صورت تکی
+              و در قالب دسته نا محدود در کسری از زمان قابل پرداخت می باشد.
+            </p>
+          </div>
+          <img
+            src="assets/forecaster-work-closely.svg"
+            alt=""
+            class="max-h-80 w-1/3"
+          />
+        </div>
+      }
+    }
   </section>
 
   <div class="relative">
     <img class="absolute inset-0 -z-20" src="assets/line.svg" alt="" />
     <section class="flex flex-col md:py-30">
       <div
-        class="flex flex-col md:flex-row items-center md:justify-between gradient w-full rounded-3xl p-8"
+        class="gradient flex w-full flex-col items-center rounded-3xl p-8 md:flex-row md:justify-between"
       >
-        <div class="grid p-8 prose">
-          <h1 class="text-white leading-relaxed text-center">
+        <div class="prose grid p-8">
+          <h1 class="text-center leading-relaxed text-white">
             پرداخت های گروهی برنامه ریزی شده همراه با مانیتورینگ کامل
           </h1>
-          <p class="text-white text-opacity-87 text-center">
+          <p class="text-center text-white text-opacity-87">
             یکی از راهکارها و خدمات شرکت هوشمند ریسک امکان ایجاد پرداخت های مشخص
             برای سازمان های بزرگ با دپارتمان های متفاوت است.
           </p>
@@ -173,7 +184,7 @@
         <img
           src="assets/transaction-Image.svg"
           alt=""
-          class="sm:w-2/3 md:w-1/2 -mb-8"
+          class="-mb-8 sm:w-2/3 md:w-1/2"
         />
       </div>
     </section>
@@ -181,19 +192,19 @@
 
   <section class="flex flex-col items-center md:py-32">
     <div
-      class="flex flex-col md:flex-row items-center md:justify-between bg-slate-700 w-full rounded-3xl p-8 md:py-12 md:px-24"
+      class="flex w-full flex-col items-center rounded-3xl bg-slate-700 p-8 md:flex-row md:justify-between md:px-24 md:py-12"
     >
-      <div class="grid p-8 prose">
-        <h1 class="text-white leading-relaxed text-center">
+      <div class="prose grid p-8">
+        <h1 class="text-center leading-relaxed text-white">
           گزارش تاریخچه هوشمند، دسته بندی سوابق تراکنش ها
         </h1>
-        <p class="text-white text-opacity-87 text-center">
+        <p class="text-center text-white text-opacity-87">
           در این بخش نمایی کلی از تراکنش ها و گزارشات مالی نمایش داده می شود که
           به منظور یاری رسانی به شرکت ها و سازمان ها در بحث بودجه بندی پیشرفته و
           برنامه ریزی کمک می کند.
         </p>
         <button
-          class="place-self-center py-5 px-10 rounded-full bg-zinc-100 text-slate-700 font-bold"
+          class="place-self-center rounded-full bg-zinc-100 px-10 py-5 font-bold text-slate-700"
         >
           درخواست دمو
         </button>

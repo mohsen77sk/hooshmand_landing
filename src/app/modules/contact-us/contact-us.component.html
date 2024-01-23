@@ -5,10 +5,10 @@
 
   <section class="flex flex-col items-center">
     <div class="prose max-w-120">
-      <h2 class="text-slate-700 leading-relaxed text-center mb-2">
+      <h2 class="mb-2 text-center leading-relaxed text-slate-700">
         راه ارتباط با ما
       </h2>
-      <p class="text-zinc-500 text-center">
+      <p class="text-center text-zinc-500">
         نظر و درخواست خود را برای ما در قسمت پیام بنویسید.
       </p>
     </div>
@@ -16,24 +16,33 @@
 
   <section class="flex flex-col items-center">
     <div
-      class="flex flex-col md:flex-row bg-slate-50 rounded-3xl w-full relative overflow-hidden"
+      class="relative flex w-full flex-col overflow-hidden rounded-3xl bg-slate-50 md:flex-row"
     >
-      <div class="prose p-6 sm:p-12 gradient max-w-full">
-        <h3 class="text-white pb-2">اطلاعات تماس</h3>
-        <p class="text-white pb-8">
+      <div class="gradient prose max-w-full p-6 sm:p-12">
+        <h3 class="pb-2 text-white">اطلاعات تماس</h3>
+        <p class="pb-8 text-white">
           ارتباط با ما و خدمات پشتیبانی 24 ساعته از طریق راه های ذیل می باشد :
         </p>
-        <div class="flex gap-6 text-white mb-4">
-          <object data="/assets/icons/bxs-phone-call.svg"></object>
-          <p class="m-0">021-58169000</p>
+        <div class="mb-4 flex gap-6 text-white">
+          <object
+            data="/assets/icons/bxs-phone-call.svg"
+            aria-labelledby="label-phone"
+          ></object>
+          <p id="label-phone" class="m-0">021-58169000</p>
         </div>
-        <div class="flex gap-6 text-white mb-4">
-          <object data="/assets/icons/ic-sharp-email.svg"></object>
-          <p class="m-0">info&#64;ibpay.ir</p>
+        <div class="mb-4 flex gap-6 text-white">
+          <object
+            data="/assets/icons/ic-sharp-email.svg"
+            aria-labelledby="label-email"
+          ></object>
+          <p id="label-email" class="m-0">info&#64;ibpay.ir</p>
         </div>
-        <div class="flex gap-6 text-white mb-4">
-          <object data="/assets/icons/carbon-location-filled.svg"></object>
-          <p class="m-0">
+        <div class="mb-4 flex gap-6 text-white">
+          <object
+            data="/assets/icons/carbon-location-filled.svg"
+            aria-labelledby="label-address"
+          ></object>
+          <p id="label-address" class="m-0">
             تهران، میدان آرژانتین، خیابان 12 غربی، پلاک 15، طبقه 2 شرکت مدیریت
             ریسک هوشمند ایرانیان
           </p>

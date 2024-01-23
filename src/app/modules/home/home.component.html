@@ -11,12 +11,12 @@
       alt="background"
     />
     <app-navigation class="mt-16"></app-navigation>
-    <article class="flex flex-1 items-center justify-between mt-18">
-      <div class="flex flex-col w-1/2 prose">
-        <h1 class="text-white leading-relaxed">
+    <article class="mt-18 flex flex-1 items-center justify-between">
+      <div class="prose flex w-1/2 flex-col">
+        <h1 class="leading-relaxed text-white">
           «هوشمندانه بپردازید،<br />هوشمندتر زندگی کنید».
         </h1>
-        <p class="text-3xl text-white text-justify">
+        <p class="text-justify text-3xl text-white">
           <b>شرکت دانش بنیان مدیریت ریسک هوشمند ایرانیان</b>
           ، متشکل از تیمی نخبه و جوانانی متخصص در حوزه فناوری اطلاعات، بازار
           سرمایه و سیستم بانکی است که راهکارها و حل مشکلات نهادهای مالی، شرکت
@@ -33,17 +33,17 @@
   </section>
 
   <section class="flex flex-col items-center">
-    <div class="py-5 px-13 rounded-full bg-zinc-100 text-slate-700 font-bold">
+    <div class="rounded-full bg-zinc-100 px-13 py-5 font-bold text-slate-700">
       خدمات و محصولات ما
     </div>
-    <div class="prose max-w-full text-center my-10">
+    <div class="prose my-10 max-w-full text-center">
       <h1>زندگی هوشمند با برترین خدمات شروع می شود</h1>
     </div>
     <div
-      class="grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-10 w-full"
+      class="grid w-full grid-cols-1 justify-items-center gap-10 lg:grid-cols-3"
     >
       <div
-        class="w-full pt-16 pb-6 px-8 bg-zinc-100 rounded-3xl lg:bg-transparent prose"
+        class="prose w-full rounded-3xl bg-zinc-100 px-8 pb-6 pt-16 lg:bg-transparent"
       >
         <img class="" src="assets/pardakhtyari-icon.svg" alt="" />
         <h2 class="text-center">خدمات پرداخت یاری</h2>
@@ -52,13 +52,13 @@
           ,وفاداری مشتری
         </p>
         <a
-          class="text-center w-full block"
+          class="block w-full text-center"
           [routerLink]="['assistance-payment']"
         >
           بیشتر
         </a>
       </div>
-      <div class="w-full pt-16 pb-6 px-8 bg-zinc-100 rounded-3xl prose">
+      <div class="prose w-full rounded-3xl bg-zinc-100 px-8 pb-6 pt-16">
         <img class="" src="assets/ibpay-icon.svg" alt="" />
         <h2 class="text-center">خدمات بانکداری باز</h2>
         <p class="text-justify">
@@ -67,12 +67,12 @@
           مالی بزرگ اهم از تامین سرمایه ها، شرکت های سبدگردانی و صندوق های
           سرمایه گذاری تهیه شده است .
         </p>
-        <a class="text-center w-full block" [routerLink]="['open-banking']">
+        <a class="block w-full text-center" [routerLink]="['open-banking']">
           بیشتر
         </a>
       </div>
       <div
-        class="w-full pt-16 pb-6 px-8 bg-zinc-100 rounded-3xl lg:bg-transparent prose"
+        class="prose w-full rounded-3xl bg-zinc-100 px-8 pb-6 pt-16 lg:bg-transparent"
       >
         <img class="" src="assets/data-icon.svg" alt="" />
         <h2 class="text-center">خدمات زیرساخت پردازش داده ها</h2>
@@ -80,44 +80,47 @@
           وضعیت پرداخت , تحلیل حساب مشتریان , گزارش فعالیت حساب , گزارشات دارایی
           ,وفاداری مشتری
         </p>
-        <a class="text-center w-full block" [routerLink]="['data-analysis']">
+        <a class="block w-full text-center" [routerLink]="['data-analysis']">
           بیشتر
         </a>
       </div>
     </div>
   </section>
 
-  <section class="flex flex-col w-full py-10 px-30 bg-zinc-100">
+  <section class="flex w-full flex-col bg-zinc-100 px-30 py-10">
     <div class="prose max-w-full text-center">
       <h1>بانک های متصل</h1>
     </div>
-    <div class="flex flex-wrap items-center justify-between gap-4 mt-12">
-      <img class="w-24 h-w-24" src="assets/bank-saderat.png" alt="bank" />
-      <img class="w-24 h-w-24" src="assets/bank-shahr.png" alt="bank" />
-      <img class="w-24 h-w-24" src="assets/bank-tejarat.png" alt="bank" />
-      <img class="w-24 h-w-24" src="assets/bank-sina.png" alt="bank" />
-      <img class="w-24 h-w-24" src="assets/bank-tosee.png" alt="bank" />
-      <img class="w-24 h-w-24" src="assets/bank-pasargad.png" alt="bank" />
-      <img class="w-24 h-w-24" src="assets/bank-keshavarzi.png" alt="bank" />
+    <div class="mt-12 flex flex-wrap items-center justify-between gap-4">
+      <img class="h-w-24 w-24" src="assets/bank-saderat.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/bank-shahr.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/bank-tejarat.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/bank-sina.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/bank-tosee.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/bank-pasargad.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/bank-keshavarzi.png" alt="bank" />
     </div>
   </section>
 
   <section class="flex flex-col">
     <div
-      class="flex justify-between w-full bg-slate-800 rounded-3xl p-8 md:py-24 md:px-15"
+      class="flex w-full justify-between rounded-3xl bg-slate-800 p-8 md:px-15 md:py-24"
     >
-      <div class="flex-1 prose max-w-none">
-        <h1 class="text-center text-white mb-16">برای سازمان ها و بیزنس شما</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-white">
+      <div class="prose max-w-none flex-1">
+        <h1 class="mb-16 text-center text-white">برای سازمان ها و بیزنس شما</h1>
+        <div class="grid grid-cols-1 gap-5 text-white md:grid-cols-2">
           <div class="flex gap-3">
             <div
-              class="flex flex-0 items-center justify-center w-15 h-15 rounded-full bg-slate-700"
+              class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-slate-700"
             >
-              <object data="assets/icons/fi_send.svg"></object>
+              <object
+                data="assets/icons/fi_send.svg"
+                aria-labelledby=""
+              ></object>
             </div>
             <div class="me-5">
               <h3 class="mt-0 text-white">پشتیبانی آنلاین و مدیریت تیکت</h3>
-              <p class="text-white text-opacity-87 text-justify">
+              <p class="text-justify text-white text-opacity-87">
                 همکاران واحد پشتیبانی ما همیشه در کنار شما و آماده پاسخگویی و
                 رفع نیاز های هستند.
               </p>
@@ -125,13 +128,16 @@
           </div>
           <div class="flex gap-3">
             <div
-              class="flex flex-0 items-center justify-center w-15 h-15 rounded-full bg-slate-700"
+              class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-slate-700"
             >
-              <object data="assets/icons/fi_briefcase.svg"></object>
+              <object
+                data="assets/icons/fi_briefcase.svg"
+                aria-labelledby=""
+              ></object>
             </div>
             <div class="me-5">
               <h3 class="mt-0 text-white">راحتی و روش نوین پرداخت</h3>
-              <p class="text-white text-opacity-87 text-justify">
+              <p class="text-justify text-white text-opacity-87">
                 سهولت در پرداخت ها و ایجاد فرایند بررسی تمامی مراحل پرداخت توسط
                 اشخاص و تائید دو مرحله ای پرداخت ها
               </p>
@@ -139,26 +145,32 @@
           </div>
           <div class="flex gap-3">
             <div
-              class="flex flex-0 items-center justify-center w-15 h-15 rounded-full bg-slate-700"
+              class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-slate-700"
             >
-              <object data="assets/icons/fi_security.svg"></object>
+              <object
+                data="assets/icons/fi_security.svg"
+                aria-labelledby=""
+              ></object>
             </div>
             <div class="me-5">
               <h3 class="mt-0 text-white">امنیت پرداخت</h3>
-              <p class="text-white text-opacity-87 text-justify">
+              <p class="text-justify text-white text-opacity-87">
                 ایجاد زیرساخت امن جهت حصول اطمینان از امنیت حساب ها و تراکنش ها
               </p>
             </div>
           </div>
           <div class="flex gap-3">
             <div
-              class="flex flex-0 items-center justify-center w-15 h-15 rounded-full bg-slate-700"
+              class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-slate-700"
             >
-              <object data="assets/icons/fi_trello.svg"></object>
+              <object
+                data="assets/icons/fi_trello.svg"
+                aria-labelledby=""
+              ></object>
             </div>
             <div class="me-5">
               <h3 class="mt-0 text-white">به اشتراک گذاری گزارش مالی</h3>
-              <p class="text-white text-opacity-87 text-justify">
+              <p class="text-justify text-white text-opacity-87">
                 ارائه تمامی گزارشات در خصوص تمامی پرداخت ها با جزئیات کامل به
                 همراه نشان دادن وضعیت پرداخت ها
               </p>
@@ -169,17 +181,17 @@
       <img
         src="assets/business-image.svg"
         alt=""
-        class="-me-4 max-w-1/3 hidden lg:block"
+        class="-me-4 hidden max-w-1/3 lg:block"
       />
     </div>
   </section>
 
   <section class="flex flex-col items-center">
-    <div class="py-5 px-13 rounded-full bg-zinc-100 text-slate-700 font-bold">
+    <div class="rounded-full bg-zinc-100 px-13 py-5 font-bold text-slate-700">
       مقالات و اطلاعیه ها
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-9 w-full">
-      <div class="bg-zinc-50 rounded-3xl p-10">
+    <div class="mt-9 grid w-full grid-cols-1 gap-10 md:grid-cols-2">
+      <div class="rounded-3xl bg-zinc-50 p-10">
         <div class="grid gap-10">
           <div class="relative">
             <img
@@ -188,28 +200,28 @@
               alt=""
             />
             <div
-              class="absolute bottom-6 left-6 bg-white rounded-3xl py-3 px-8"
+              class="absolute bottom-6 left-6 rounded-3xl bg-white px-8 py-3"
             >
               <span class="text-lg font-bold">پرداخت یاری</span>
             </div>
           </div>
-          <div class="grid gap-4 prose max-w-full">
+          <div class="prose grid max-w-full gap-4">
             <span class="text-black text-opacity-40"> 18 مهر 1402 </span>
             <h2 class="m-0">"افشای اسرار دروازه های پرداخت اینترنتی (IPG)"</h2>
-            <p class="text-black text-opacity-87 text-justify">
+            <p class="text-justify text-black text-opacity-87">
               در دنیای پر سرعت تجارت دیجیتال، دروازه‌های پرداخت اینترنتی (IPG)
               به عنوان قهرمانان گمنام ظاهر شده‌اند که تراکنش‌های آنلاین بی‌وقفه
               و امن را تسهیل می‌کنند. هدف این وبلاگ ابهام زدایی از قلمرو IPG ها،
               بررسی نقش حیاتی آنها در اکوسیستم تجارت الکترونیک، ویژگی های کلیدی
               و چشم انداز در حال تحول پرداخت های دیجیتال است.
             </p>
-            <a class="text-lg font-bold place-self-end" href="#">
+            <a class="place-self-end text-lg font-bold" href="#">
               ادامه مطلب
             </a>
           </div>
         </div>
       </div>
-      <div class="bg-zinc-50 rounded-3xl p-10">
+      <div class="rounded-3xl bg-zinc-50 p-10">
         <div class="grid gap-10">
           <div class="relative">
             <img
@@ -218,17 +230,17 @@
               alt=""
             />
             <div
-              class="absolute bottom-6 left-6 bg-white rounded-3xl py-3 px-8"
+              class="absolute bottom-6 left-6 rounded-3xl bg-white px-8 py-3"
             >
               <span class="text-lg font-bold">بانکداری باز</span>
             </div>
           </div>
-          <div class="grid gap-4 prose max-w-full">
+          <div class="prose grid max-w-full gap-4">
             <span class="text-black text-opacity-40"> 18 مهر 1402 </span>
             <h2 class="m-0">
               "پیمایی در مرزهای مالی: پرده برداری از قدرت بانکداری باز"
             </h2>
-            <p class="text-black text-opacity-87 text-justify">
+            <p class="text-justify text-black text-opacity-87">
               در سال‌های اخیر، چشم‌انداز مالی با ظهور بانکداری باز شاهد تغییر
               تحولی بوده است. این مفهوم انقلابی ساختارهای بانکداری سنتی را تغییر
               داده، نوآوری، رقابت و خدمات را بهبود بخشیده است. در این وبلاگ،
@@ -236,7 +248,7 @@
               مصرف‌کنندگان، مؤسسات مالی و اکوسیستم فین‌تک گسترده‌تر را بررسی
               می‌کنیم.
             </p>
-            <a class="text-lg font-bold place-self-end" href="#">
+            <a class="place-self-end text-lg font-bold" href="#">
               ادامه مطلب
             </a>
           </div>

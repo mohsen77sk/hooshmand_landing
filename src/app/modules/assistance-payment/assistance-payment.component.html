@@ -6,19 +6,19 @@
       alt="background"
     />
     <app-navigation class="mt-16" theme="dark"></app-navigation>
-    <article class="flex flex-1 items-center justify-between mt-18 relative">
+    <article class="relative mt-18 flex flex-1 items-center justify-between">
       <div
-        class="absolute h-full w-3/5 bg-zinc-100 bg-opacity-75 rounded-3xl right-0 -z-10"
+        class="absolute right-0 -z-10 h-full w-3/5 rounded-3xl bg-zinc-100 bg-opacity-75"
       ></div>
       <div
-        class="absolute h-full w-1/5 bg-slate-700 rounded-3xl left-0 -z-10"
+        class="absolute left-0 -z-10 h-full w-1/5 rounded-3xl bg-slate-700"
       ></div>
 
-      <div class="flex flex-col py-14 px-8 w-1/2 prose">
-        <h1 class="text-slate-700 leading-relaxed text-center">
+      <div class="prose flex w-1/2 flex-col px-8 py-14">
+        <h1 class="text-center leading-relaxed text-slate-700">
           خدمات پرداخت یاری
         </h1>
-        <p class="text-2xl text-zinc-500 text-justify">
+        <p class="text-justify text-2xl text-zinc-500">
           درگاه پرداخت اینترنتی (IPG) فناوری است که با اتصال ایمن یک وب سایت
           تجارت الکترونیک یا سرویس آنلاین به شبکه پردازش پرداخت، تراکنش های
           آنلاین را تسهیل می کند. وظیفه اصلی آن فعال کردن مجوز و پردازش پرداخت
@@ -26,8 +26,8 @@
           ایمن بین مشتری، تاجر و پردازشگر پرداخت منتقل می شود.
         </p>
       </div>
-      <div class="flex items-center justify-start w-1/2">
-        <div class="bg-white rounded-3xl w-5/6 z-10 p-8 my-8">
+      <div class="flex w-1/2 items-center justify-start">
+        <div class="z-10 my-8 w-5/6 rounded-3xl bg-white p-8">
           <img src="assets/dashbord-image-5.svg" alt="Dashboard image" />
         </div>
       </div>
@@ -35,36 +35,36 @@
   </section>
 
   <section
-    class="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center mt-12"
+    class="mt-12 grid grid-cols-1 place-items-center gap-8 sm:grid-cols-2"
   >
     <div class="prose max-w-120">
-      <h2 class="text-slate-700 leading-relaxed text-center">
+      <h2 class="text-center leading-relaxed text-slate-700">
         انتقال امن داده ها
       </h2>
-      <p class="text-zinc-500 text-center">
+      <p class="text-center text-zinc-500">
         دروازه پرداخت اینترنتی اطلاعات حساس پرداخت مشتری را رمزگذاری می کند تا
         از انتقال ایمن از طریق اینترنت اطمینان حاصل کند. این رمزگذاری معمولاً با
         استفاده از فناوری هایی مانند SSL (Secure Socket Layer) یا TLS (Transport
         Layer Security) انجام می شود.
       </p>
     </div>
-    <img src="assets/security-pc.png" alt="" class="w-64 h-64" />
+    <img src="assets/security-pc.png" alt="" class="h-64 w-64" />
   </section>
 
   <section
-    class="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center relative"
+    class="relative grid grid-cols-1 place-items-center gap-8 sm:grid-cols-2"
   >
     <img
       src="assets/arrow-1.svg"
       alt=""
-      class="hidden sm:block absolute bottom-0 -mb-8 order-2 max-w-60"
+      class="absolute bottom-0 order-2 -mb-8 hidden max-w-60 sm:block"
     />
-    <img src="assets/sync-data.png" alt="" class="w-64 h-64 order-1" />
+    <img src="assets/sync-data.png" alt="" class="order-1 h-64 w-64" />
     <div class="prose max-w-120">
-      <h2 class="text-slate-700 leading-relaxed text-center">
+      <h2 class="text-center leading-relaxed text-slate-700">
         IPG داده ها را به پردازشگر پرداخت ارسال می کند
       </h2>
-      <p class="text-zinc-500 text-center">
+      <p class="text-center text-zinc-500">
         سپس دروازه پرداخت اینترنتی جزئیات تراکنش را به پردازشگر پرداخت ارسال می
         کند. پردازشگر پرداخت یک موسسه مالی یا یک سرویس شخص ثالث است که مسئول
         مدیریت تراکنش است.
@@ -73,84 +73,84 @@
   </section>
 
   <section
-    class="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center relative sm:mt-12"
+    class="relative grid grid-cols-1 place-items-center gap-8 sm:mt-12 sm:grid-cols-2"
   >
     <img
       src="assets/arrow-2.svg"
       alt=""
-      class="hidden sm:block absolute top-0 -mt-4 max-w-60"
+      class="absolute top-0 -mt-4 hidden max-w-60 sm:block"
     />
     <img
       src="assets/arrow-3.svg"
       alt=""
-      class="hidden sm:block absolute bottom-0 -mb-32 -ml-80 max-w-30"
+      class="absolute bottom-0 -mb-32 -ml-80 hidden max-w-30 sm:block"
     />
     <div class="prose max-w-120">
-      <h2 class="text-slate-700 leading-relaxed text-center">درخواست مجوز</h2>
-      <p class="text-zinc-500 text-center">
+      <h2 class="text-center leading-relaxed text-slate-700">درخواست مجوز</h2>
+      <p class="text-center text-zinc-500">
         پردازشگر پرداخت یک درخواست مجوز به بانک مشتری یا صادرکننده کارت اعتباری
         ارسال می کند تا جزئیات تراکنش را تأیید کند و اطمینان حاصل کند که مشتری
         دارای وجوه یا اعتبار کافی است.
       </p>
     </div>
     <div class="prose max-w-120">
-      <h2 class="text-slate-700 leading-relaxed text-center">پاسخ مجوز</h2>
-      <p class="text-zinc-500 text-center">
+      <h2 class="text-center leading-relaxed text-slate-700">پاسخ مجوز</h2>
+      <p class="text-center text-zinc-500">
         بانک یا صادرکننده کارت اعتباری مشتری یک پاسخ مجوز به پردازشگر پرداخت
         ارسال می کند که نشان می دهد آیا تراکنش تایید یا رد شده است.
       </p>
     </div>
   </section>
 
-  <section class="grid grid-cols-1 place-items-center relative sm:mt-12">
+  <section class="relative grid grid-cols-1 place-items-center sm:mt-12">
     <div class="prose max-w-120">
-      <h2 class="text-slate-700 leading-relaxed text-center">تایید تراکنش</h2>
-      <p class="text-zinc-500 text-center">
+      <h2 class="text-center leading-relaxed text-slate-700">تایید تراکنش</h2>
+      <p class="text-center text-zinc-500">
         در صورت تایید تراکنش، پردازشگر پرداخت به درگاه پرداخت اینترنتی اطلاع
         می‌دهد که به نوبه خود به تاجر اطلاع می‌دهد.
       </p>
     </div>
   </section>
 
-  <section class="grid grid-cols-1 place-items-center relative sm:mt-12">
+  <section class="relative grid grid-cols-1 place-items-center sm:mt-12">
     <img
       src="assets/arrow-4.svg"
       alt=""
-      class="hidden sm:block absolute top-0 -mt-24 -mr-100 max-w-30"
+      class="absolute top-0 -mr-100 -mt-24 hidden max-w-30 sm:block"
     />
-    <img src="assets/check-pc.png" alt="" class="w-64 h-64" />
+    <img src="assets/check-pc.png" alt="" class="h-64 w-64" />
   </section>
 
   <section
-    class="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center relative sm:mt-12"
+    class="relative grid grid-cols-1 place-items-center gap-8 sm:mt-12 sm:grid-cols-2"
   >
     <img
       src="assets/arrow-5.svg"
       alt=""
-      class="hidden sm:block absolute top-0 max-w-60"
+      class="absolute top-0 hidden max-w-60 sm:block"
     />
     <div class="prose max-w-120">
-      <h2 class="text-slate-700 leading-relaxed text-center">تکمیل تراکنش</h2>
-      <p class="text-zinc-500 text-center">
+      <h2 class="text-center leading-relaxed text-slate-700">تکمیل تراکنش</h2>
+      <p class="text-center text-zinc-500">
         تاجر معامله را تکمیل می کند و مشتری تأییدیه پرداخت موفقیت آمیز را دریافت
         می کند.
       </p>
     </div>
-    <img src="assets/pay.png" alt="" class="w-50 h-50" />
+    <img src="assets/pay.png" alt="" class="h-50 w-50" />
   </section>
 
   <section
-    class="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center relative"
+    class="relative grid grid-cols-1 place-items-center gap-8 sm:grid-cols-2"
   >
     <img
       src="assets/arrow-6.svg"
       alt=""
-      class="hidden sm:block absolute bottom-0 -mb-12 max-w-60"
+      class="absolute bottom-0 -mb-12 hidden max-w-60 sm:block"
     />
-    <img src="assets/mony.png" alt="" class="w-50 h-50 order-2 sm:order-none" />
-    <div class="prose max-w-120 order-1 sm:order-none">
-      <h2 class="text-slate-700 leading-relaxed text-center">تسویه وجوه</h2>
-      <p class="text-zinc-500 text-center">
+    <img src="assets/mony.png" alt="" class="order-2 h-50 w-50 sm:order-none" />
+    <div class="prose order-1 max-w-120 sm:order-none">
+      <h2 class="text-center leading-relaxed text-slate-700">تسویه وجوه</h2>
+      <p class="text-center text-zinc-500">
         تاجر معامله را تکمیل می کند و مشتری تأییدیه پرداخت موفقیت آمیز را دریافت
         می کند.
       </p>
@@ -159,42 +159,42 @@
 
   <section class="flex flex-col items-center sm:mt-12">
     <div class="prose max-w-120">
-      <h2 class="text-slate-700 leading-relaxed text-center mb-2">
+      <h2 class="mb-2 text-center leading-relaxed text-slate-700">
         درگاه پرداخت هوشمند ریسک
       </h2>
-      <p class="text-zinc-500 text-center">
+      <p class="text-center text-zinc-500">
         امکان مدیریت تراکنش‌های مالی در بستر وب را به راحتی امکان‌پذیر می‌کند و
         با پیاده‌سازی و اجرای راه‌کارهای هوشمندانه، باعث افزایش درصد تراکنش‌های
         موفق و سوددهی بیش‌تر می‌شود.
       </p>
     </div>
-    <div class="grid grid-cols-3 gap-12 mt-20">
-      <div class="flex flex-col items-center max-w-60">
+    <div class="mt-20 grid grid-cols-3 gap-12">
+      <div class="flex max-w-60 flex-col items-center">
         <img class="max-w-40" src="assets/clock.png" alt="" />
-        <div class="prose text-center mt-14">
+        <div class="prose mt-14 text-center">
           <h3>پشتیبانی ۲۴/۷</h3>
-          <p class="text-zinc-500 text-justify mt-6">
+          <p class="mt-6 text-justify text-zinc-500">
             هفت روزِ هفته، با پشتیبانی ۲۴ ساعته‌ی هوشمند ریسک، آماده‌ی پاسخ‌گویی
             و راهنمایی به کاربران
           </p>
         </div>
       </div>
-      <div class="flex flex-col items-center max-w-60">
+      <div class="flex max-w-60 flex-col items-center">
         <img class="max-w-40" src="assets/phone.png" alt="" />
-        <div class="prose text-center mt-14">
+        <div class="prose mt-14 text-center">
           <h3>تضمین پرداخت</h3>
-          <p class="text-zinc-500 text-justify mt-6">
+          <p class="mt-6 text-justify text-zinc-500">
             درگاه پرداخت هوشمند ریسک، پرداخت اینترنتی، سریع و امن و آسان را به
             مشتریان ارئه می‌دهد. هدایت هوشمند در هوشمند ریسک کاربران به بهترین
             درگاه پرداخت با بالاترین میزان تراکنش‌های موفق هدایت می‌شوند.
           </p>
         </div>
       </div>
-      <div class="flex flex-col items-center max-w-60">
+      <div class="flex max-w-60 flex-col items-center">
         <img class="max-w-40" src="assets/phone-card.png" alt="" />
-        <div class="prose text-center mt-14">
+        <div class="prose mt-14 text-center">
           <h3>امنیتِ پرداخت</h3>
-          <p class="text-zinc-500 text-justify mt-6">
+          <p class="mt-6 text-justify text-zinc-500">
             درگاه امن هوشمند ریسک، ضمانتی برای امنیت اطلاعات بانکی افراد، هنگام
             پرداخت‌‌های اینترنتی آن‌هاست.
           </p>

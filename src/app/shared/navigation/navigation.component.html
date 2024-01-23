@@ -1,14 +1,14 @@
-<nav class="flex flex-1 items-center justify-between z-50">
+<nav class="z-50 flex flex-1 items-center justify-between">
   <div class="flex items-center gap-10">
     <div
-      class="bg-opacity-10 rounded-full"
+      class="rounded-full bg-opacity-10"
       [ngClass]="{
         'bg-white': theme === 'light',
         'bg-black': theme === 'dark'
       }"
     >
       <button
-        class="transition h-14 px-12 rounded-full font-semibold hover:bg-opacity-10"
+        class="h-14 rounded-full px-12 font-semibold transition hover:bg-opacity-10"
         [ngClass]="{
           'text-white hover:bg-white': theme === 'light',
           'text-slate-700 hover:bg-black': theme === 'dark'
@@ -18,7 +18,7 @@
         صفحه اصلی
       </button>
       <button
-        class="group dropdown transition h-14 px-12 rounded-full font-semibold relative hover:bg-opacity-10"
+        class="dropdown group relative h-14 rounded-full px-12 font-semibold transition hover:bg-opacity-10"
         [ngClass]="{
           'text-white hover:bg-white': theme === 'light',
           'text-slate-700 hover:bg-black': theme === 'dark'
@@ -26,17 +26,17 @@
       >
         خدمات و محصولات
         <div
-          class="group-hover:block dropdown-menu absolute top-14 -mr-13 w-full hidden h-auto z-50 backdrop-blur"
+          class="dropdown-menu absolute top-14 z-50 -mr-13 hidden h-auto w-full backdrop-blur group-hover:block"
         >
           <div
-            class="bg-opacity-10 pt-2 rounded-b"
+            class="rounded-b bg-opacity-10 pt-2"
             [ngClass]="{
               'bg-white': theme === 'light',
               'bg-black': theme === 'dark'
             }"
           >
             <button
-              class="transition h-14 px-8 w-full rounded font-semibold hover:bg-opacity-10"
+              class="h-14 w-full rounded px-8 font-semibold transition hover:bg-opacity-10"
               [ngClass]="{
                 'text-white hover:bg-white': theme === 'light',
                 'text-slate-700 hover:bg-black': theme === 'dark'
@@ -46,7 +46,7 @@
               خدمات بانکداری باز
             </button>
             <button
-              class="transition h-14 px-8 w-full rounded font-semibold hover:bg-opacity-10"
+              class="h-14 w-full rounded px-8 font-semibold transition hover:bg-opacity-10"
               [ngClass]="{
                 'text-white hover:bg-white': theme === 'light',
                 'text-slate-700 hover:bg-black': theme === 'dark'
@@ -56,7 +56,7 @@
               خدمات پرداخت یاری
             </button>
             <button
-              class="transition h-14 px-8 w-full rounded font-semibold hover:bg-opacity-10"
+              class="h-14 w-full rounded px-8 font-semibold transition hover:bg-opacity-10"
               [ngClass]="{
                 'text-white hover:bg-white': theme === 'light',
                 'text-slate-700 hover:bg-black': theme === 'dark'
@@ -69,7 +69,7 @@
         </div>
       </button>
       <button
-        class="transition h-14 px-12 rounded-full font-semibold hover:bg-opacity-10"
+        class="h-14 rounded-full px-12 font-semibold transition hover:bg-opacity-10"
         [ngClass]="{
           'text-white hover:bg-white': theme === 'light',
           'text-slate-700 hover:bg-black': theme === 'dark'
@@ -79,7 +79,7 @@
         ارتباط با ما
       </button>
       <button
-        class="transition h-14 px-12 rounded-full font-semibold hover:bg-opacity-10"
+        class="h-14 rounded-full px-12 font-semibold transition hover:bg-opacity-10"
         [ngClass]="{
           'text-white hover:bg-white': theme === 'light',
           'text-slate-700 hover:bg-black': theme === 'dark'
@@ -90,6 +90,10 @@
     </div>
   </div>
   <div class="flex items-center">
-    <img class="w-16 h-16" src="assets/logo.svg" alt="Logo Hoshmand Risk" />
+    <img
+      class="h-16 w-16"
+      src="assets/n-logo-white.png"
+      alt="Logo Hoshmand Risk"
+    />
   </div>
 </nav>
