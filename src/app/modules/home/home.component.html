@@ -1,18 +1,13 @@
 <div class="flex w-full flex-auto flex-col">
-  <section class="flex flex-col">
+  <section class="flex flex-col xl:h-192">
     <img
-      class="absolute inset-0 -z-20"
-      src="assets/background-banner-2.svg"
-      alt="background"
-    />
-    <img
-      class="absolute inset-0 -z-10 w-5/6 xl:w-auto"
-      src="assets/background-banner.svg"
+      class="absolute inset-0 -z-20 w-full"
+      src="assets/n-background-header.svg"
       alt="background"
     />
     <app-navigation class="mt-16"></app-navigation>
-    <article class="mt-18 flex flex-1 items-center justify-between">
-      <div class="prose flex w-1/2 flex-col">
+    <article class="mt-8 flex flex-1 items-center justify-between">
+      <div class="prose flex flex-col md:w-1/2">
         <h1 class="leading-relaxed text-white">
           «هوشمندانه بپردازید،<br />هوشمندتر زندگی کنید».
         </h1>
@@ -25,15 +20,15 @@
         </p>
       </div>
       <img
-        class="w-1/2"
-        src="assets/image-banner-1.png"
+        class="hidden md:block md:w-1/2"
+        src="assets/n-image-banner.png"
         alt="Dashboard image"
       />
     </article>
   </section>
 
   <section class="flex flex-col items-center">
-    <div class="rounded-full bg-zinc-100 px-13 py-5 font-bold text-slate-700">
+    <div class="rounded-full bg-zinc-100 px-13 py-5 font-bold">
       خدمات و محصولات ما
     </div>
     <div class="prose my-10 max-w-full text-center">
@@ -43,23 +38,25 @@
       class="grid w-full grid-cols-1 justify-items-center gap-10 lg:grid-cols-3"
     >
       <div
-        class="prose w-full rounded-3xl bg-zinc-100 px-8 pb-6 pt-16 lg:bg-transparent"
+        class="prose grid w-full place-items-center rounded-3xl px-8 pb-6 pt-16 transition hover:bg-zinc-50"
       >
-        <img class="" src="assets/pardakhtyari-icon.svg" alt="" />
+        <img class="max-w-60" src="assets/n-pardakhtyari-image.png" alt="" />
         <h2 class="text-center">خدمات پرداخت یاری</h2>
         <p class="text-justify">
           وضعیت پرداخت , تحلیل حساب مشتریان , گزارش فعالیت حساب , گزارشات دارایی
           ,وفاداری مشتری
         </p>
         <a
-          class="block w-full text-center"
+          class="hover:text-primary block w-full text-center"
           [routerLink]="['assistance-payment']"
         >
           بیشتر
         </a>
       </div>
-      <div class="prose w-full rounded-3xl bg-zinc-100 px-8 pb-6 pt-16">
-        <img class="" src="assets/ibpay-icon.svg" alt="" />
+      <div
+        class="prose grid w-full flex-col place-items-center rounded-3xl px-8 pb-6 pt-16 transition hover:bg-zinc-50"
+      >
+        <img class="max-w-60" src="assets/n-ibpay-image.png" alt="" />
         <h2 class="text-center">خدمات بانکداری باز</h2>
         <p class="text-justify">
           سامانه اتصال بانکداری باز یا iBpay شرکت مدیریت ریسک هوشمند ایرانیان،
@@ -67,127 +64,120 @@
           مالی بزرگ اهم از تامین سرمایه ها، شرکت های سبدگردانی و صندوق های
           سرمایه گذاری تهیه شده است .
         </p>
-        <a class="block w-full text-center" [routerLink]="['open-banking']">
+        <a
+          class="hover:text-primary block w-full text-center"
+          [routerLink]="['open-banking']"
+        >
           بیشتر
         </a>
       </div>
       <div
-        class="prose w-full rounded-3xl bg-zinc-100 px-8 pb-6 pt-16 lg:bg-transparent"
+        class="prose grid w-full flex-col place-items-center rounded-3xl px-8 pb-6 pt-16 transition hover:bg-zinc-50"
       >
-        <img class="" src="assets/data-icon.svg" alt="" />
+        <img class="max-w-60" src="assets/n-data-image.png" alt="" />
         <h2 class="text-center">خدمات زیرساخت پردازش داده ها</h2>
         <p class="text-justify">
           وضعیت پرداخت , تحلیل حساب مشتریان , گزارش فعالیت حساب , گزارشات دارایی
           ,وفاداری مشتری
         </p>
-        <a class="block w-full text-center" [routerLink]="['data-analysis']">
+        <a
+          class="hover:text-primary block w-full text-center"
+          [routerLink]="['data-analysis']"
+        >
           بیشتر
         </a>
       </div>
     </div>
   </section>
 
-  <section class="flex w-full flex-col bg-zinc-100 px-30 py-10">
+  <section class="flex w-full flex-col bg-zinc-100 px-30 pb-14 pt-10">
     <div class="prose max-w-full text-center">
       <h1>بانک های متصل</h1>
     </div>
-    <div class="mt-12 flex flex-wrap items-center justify-between gap-4">
-      <img class="h-w-24 w-24" src="assets/bank-saderat.png" alt="bank" />
-      <img class="h-w-24 w-24" src="assets/bank-shahr.png" alt="bank" />
-      <img class="h-w-24 w-24" src="assets/bank-tejarat.png" alt="bank" />
-      <img class="h-w-24 w-24" src="assets/bank-sina.png" alt="bank" />
-      <img class="h-w-24 w-24" src="assets/bank-tosee.png" alt="bank" />
-      <img class="h-w-24 w-24" src="assets/bank-pasargad.png" alt="bank" />
-      <img class="h-w-24 w-24" src="assets/bank-keshavarzi.png" alt="bank" />
+    <div
+      class="mt-10 flex flex-wrap items-center justify-center gap-16 sm:justify-between"
+    >
+      <img class="h-w-24 w-24" src="assets/n-bank-saderat.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/n-bank-shahr.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/n-bank-tejarat.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/n-bank-sina.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/n-bank-tosee.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/n-bank-pasargad.png" alt="bank" />
+      <img class="h-w-24 w-24" src="assets/n-bank-keshavarzi.png" alt="bank" />
     </div>
   </section>
 
   <section class="flex flex-col">
-    <div
-      class="flex w-full justify-between rounded-3xl bg-slate-800 p-8 md:px-15 md:py-24"
-    >
-      <div class="prose max-w-none flex-1">
-        <h1 class="mb-16 text-center text-white">برای سازمان ها و بیزنس شما</h1>
-        <div class="grid grid-cols-1 gap-5 text-white md:grid-cols-2">
-          <div class="flex gap-3">
-            <div
-              class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-slate-700"
-            >
-              <object
-                data="assets/icons/fi_send.svg"
-                aria-labelledby=""
-              ></object>
-            </div>
-            <div class="me-5">
-              <h3 class="mt-0 text-white">پشتیبانی آنلاین و مدیریت تیکت</h3>
-              <p class="text-justify text-white text-opacity-87">
-                همکاران واحد پشتیبانی ما همیشه در کنار شما و آماده پاسخگویی و
-                رفع نیاز های هستند.
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-3">
-            <div
-              class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-slate-700"
-            >
-              <object
-                data="assets/icons/fi_briefcase.svg"
-                aria-labelledby=""
-              ></object>
-            </div>
-            <div class="me-5">
-              <h3 class="mt-0 text-white">راحتی و روش نوین پرداخت</h3>
-              <p class="text-justify text-white text-opacity-87">
-                سهولت در پرداخت ها و ایجاد فرایند بررسی تمامی مراحل پرداخت توسط
-                اشخاص و تائید دو مرحله ای پرداخت ها
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-3">
-            <div
-              class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-slate-700"
-            >
-              <object
-                data="assets/icons/fi_security.svg"
-                aria-labelledby=""
-              ></object>
-            </div>
-            <div class="me-5">
-              <h3 class="mt-0 text-white">امنیت پرداخت</h3>
-              <p class="text-justify text-white text-opacity-87">
-                ایجاد زیرساخت امن جهت حصول اطمینان از امنیت حساب ها و تراکنش ها
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-3">
-            <div
-              class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-slate-700"
-            >
-              <object
-                data="assets/icons/fi_trello.svg"
-                aria-labelledby=""
-              ></object>
-            </div>
-            <div class="me-5">
-              <h3 class="mt-0 text-white">به اشتراک گذاری گزارش مالی</h3>
-              <p class="text-justify text-white text-opacity-87">
-                ارائه تمامی گزارشات در خصوص تمامی پرداخت ها با جزئیات کامل به
-                همراه نشان دادن وضعیت پرداخت ها
-              </p>
-            </div>
-          </div>
+    <div class="prose max-w-full text-center">
+      <h1>برای سازمان ها و کسب کار شما</h1>
+    </div>
+    <div class="mt-10 grid gap-16 md:grid-cols-2 xl:grid-cols-4">
+      <div class="grid place-items-center gap-8 rounded-xl border p-8 shadow">
+        <div
+          class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-amber-500"
+        >
+          <object data="assets/icons/fi_send.svg" aria-labelledby=""></object>
+        </div>
+        <div class="prose text-center">
+          <h4 class="m-0">پشتیبانی آنلاین و مدیریت تیکت</h4>
+          <p class="text-secondary mt-4 text-justify">
+            همکاران واحد پشتیبانی ما همیشه در کنار شما و آماده پاسخگویی و رفع
+            نیاز های هستند.
+          </p>
         </div>
       </div>
-      <img
-        src="assets/business-image.svg"
-        alt=""
-        class="-me-4 hidden max-w-1/3 lg:block"
-      />
+      <div class="grid place-items-center gap-8 rounded-xl border p-8 shadow">
+        <div
+          class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-indigo-700"
+        >
+          <object data="assets/icons/fi_trello.svg" aria-labelledby=""></object>
+        </div>
+        <div class="prose text-center">
+          <h4 class="m-0">به اشتراک گذاری گزارش مالی</h4>
+          <p class="text-secondary mt-4 text-justify">
+            ارائه تمامی گزارشات در خصوص تمامی پرداخت ها با جزئیات کامل به همراه
+            نشان دادن وضعیت پرداخت ها
+          </p>
+        </div>
+      </div>
+      <div class="grid place-items-center gap-8 rounded-xl border p-8 shadow">
+        <div
+          class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-teal-500"
+        >
+          <object
+            data="assets/icons/fi_security.svg"
+            aria-labelledby=""
+          ></object>
+        </div>
+        <div class="prose text-center">
+          <h4 class="m-0">امنیت پرداخت</h4>
+          <p class="text-secondary mt-4 text-justify">
+            ایجاد زیرساخت امن جهت حصول اطمینان از امنیت حساب ها و تراکنش ها
+          </p>
+        </div>
+      </div>
+      <div class="grid place-items-center gap-8 rounded-xl border p-8 shadow">
+        <div
+          class="flex h-15 w-15 flex-0 items-center justify-center rounded-full bg-slate-500"
+        >
+          <object
+            data="assets/icons/fi_briefcase.svg"
+            aria-labelledby=""
+          ></object>
+        </div>
+        <div class="prose text-center">
+          <h4 class="m-0">راحتی و روش نوین پرداخت</h4>
+          <p class="text-secondary mt-4 text-justify">
+            سهولت در پرداخت ها و ایجاد فرایند بررسی تمامی مراحل پرداخت توسط
+            اشخاص و تائید دو مرحله ای پرداخت ها
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="flex flex-col items-center">
-    <div class="rounded-full bg-zinc-100 px-13 py-5 font-bold text-slate-700">
+    <div class="rounded-full bg-zinc-100 px-13 py-5 font-bold">
       مقالات و اطلاعیه ها
     </div>
     <div class="mt-9 grid w-full grid-cols-1 gap-10 md:grid-cols-2">
@@ -206,9 +196,9 @@
             </div>
           </div>
           <div class="prose grid max-w-full gap-4">
-            <span class="text-black text-opacity-40"> 18 مهر 1402 </span>
+            <span class="text-secondary"> 18 مهر 1402 </span>
             <h2 class="m-0">"افشای اسرار دروازه های پرداخت اینترنتی (IPG)"</h2>
-            <p class="text-justify text-black text-opacity-87">
+            <p class="text-secondary text-justify">
               در دنیای پر سرعت تجارت دیجیتال، دروازه‌های پرداخت اینترنتی (IPG)
               به عنوان قهرمانان گمنام ظاهر شده‌اند که تراکنش‌های آنلاین بی‌وقفه
               و امن را تسهیل می‌کنند. هدف این وبلاگ ابهام زدایی از قلمرو IPG ها،
@@ -236,11 +226,11 @@
             </div>
           </div>
           <div class="prose grid max-w-full gap-4">
-            <span class="text-black text-opacity-40"> 18 مهر 1402 </span>
+            <span class="text-secondary"> 18 مهر 1402 </span>
             <h2 class="m-0">
               "پیمایی در مرزهای مالی: پرده برداری از قدرت بانکداری باز"
             </h2>
-            <p class="text-justify text-black text-opacity-87">
+            <p class="text-secondary text-justify">
               در سال‌های اخیر، چشم‌انداز مالی با ظهور بانکداری باز شاهد تغییر
               تحولی بوده است. این مفهوم انقلابی ساختارهای بانکداری سنتی را تغییر
               داده، نوآوری، رقابت و خدمات را بهبود بخشیده است. در این وبلاگ،

@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss',
   encapsulation: ViewEncapsulation.None,
 })
 export class FooterComponent {}

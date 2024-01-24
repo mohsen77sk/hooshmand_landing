@@ -90,3 +90,8 @@
 
 /* This injects Tailwind's utilities classes and any utilities classes registered by plugins. */
 @tailwind utilities;
+
+/* Global style */
+section {
+  @apply m-auto mb-24 w-full px-4 xl:w-360 xl:px-0;
+}

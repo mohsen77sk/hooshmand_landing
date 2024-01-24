@@ -265,10 +265,10 @@
 <stop offset="1" stop-color="#DFFFDF"/>
 </linearGradient>
 <clipPath id="clip0_92_7996">
-<rect width="145" height="156" fill="white" transform="translate(167 356.001)"/>
+<rect width="145" height="156" fill="white" transform="tranzinc(167 356.001)"/>
 </clipPath>
 <clipPath id="clip1_92_7996">
-<rect width="42" height="42" fill="white" transform="translate(672 330.001)"/>
+<rect width="42" height="42" fill="white" transform="tranzinc(672 330.001)"/>
 </clipPath>
 <clipPath id="clip2_92_7996">
 <rect width="12.8691" height="16.1134" rx="6.43455" transform="matrix(1 0 0 -1 376.159 140.254)" fill="white"/>
@@ -277,10 +277,10 @@
 <rect width="12.8691" height="16.1134" rx="6.43455" transform="matrix(1 0 0 -1 684.835 138.623)" fill="white"/>
 </clipPath>
 <clipPath id="clip4_92_7996">
-<rect width="123" height="44" fill="white" transform="translate(258 120.001)"/>
+<rect width="123" height="44" fill="white" transform="tranzinc(258 120.001)"/>
 </clipPath>
 <clipPath id="clip5_92_7996">
-<rect width="123" height="44" fill="white" transform="translate(258 207.001)"/>
+<rect width="123" height="44" fill="white" transform="tranzinc(258 207.001)"/>
 </clipPath>
 </defs>
 </svg>

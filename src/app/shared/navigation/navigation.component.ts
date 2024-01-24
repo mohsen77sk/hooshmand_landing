@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './navigation.component.html',
-  styleUrl: './navigation.component.scss',
   encapsulation: ViewEncapsulation.None,
 })
 export class NavigationComponent {
