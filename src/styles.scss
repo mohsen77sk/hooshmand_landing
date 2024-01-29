@@ -75,6 +75,14 @@
   .text-secondary {
     color: #71717a !important;
   }
+
+  .bg-gradient-primary {
+    background: linear-gradient(107.77deg, #009688 24.7%, #27272a 100%);
+  }
+
+  .bg-gradient-primary-reverse {
+    background: linear-gradient(107.77deg, #27272a 24.7%, #009688 100%);
+  }
 }
 
 /* This injects Tailwind's component classes and any component classes registered by plugins. */

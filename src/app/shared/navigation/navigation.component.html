@@ -1,10 +1,10 @@
 <nav class="z-50 flex flex-1 items-center justify-between">
   <div class="flex items-center gap-10">
     <div
-      class="rounded-full bg-opacity-10"
+      class="rounded-full"
       [ngClass]="{
-        'bg-white': theme === 'light',
-        'bg-black': theme === 'dark'
+        'bg-white bg-opacity-10': theme === 'light',
+        'bg-gray-100': theme === 'dark'
       }"
     >
       <button
@@ -29,10 +29,10 @@
           class="dropdown-menu absolute top-14 z-50 -mr-13 hidden h-auto w-full backdrop-blur group-hover:block"
         >
           <div
-            class="rounded-b bg-opacity-10 pt-2"
+            class="rounded-b pt-2"
             [ngClass]="{
-              'bg-white': theme === 'light',
-              'bg-black': theme === 'dark'
+              'bg-white bg-opacity-10': theme === 'light',
+              'bg-gray-100': theme === 'dark'
             }"
           >
             <button
@@ -92,7 +92,9 @@
   <div class="flex items-center">
     <img
       class="h-16 w-16"
-      src="assets/n-logo-white.png"
+      [src]="
+        theme === 'light' ? 'assets/n-logo-white.png' : 'assets/n-logo.png'
+      "
       alt="Logo Hoshmand Risk"
     />
   </div>
