@@ -8,7 +8,6 @@ import { FooterComponent } from '../../shared/footer/footer.component';
   standalone: true,
   imports: [CommonModule, NavigationComponent, FooterComponent],
   templateUrl: './contact-us.component.html',
-  styleUrl: './contact-us.component.scss',
   encapsulation: ViewEncapsulation.None,
 })
 export class ContactUsComponent {}

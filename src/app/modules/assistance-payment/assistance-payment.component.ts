@@ -8,7 +8,6 @@ import { FooterComponent } from '../../shared/footer/footer.component';
   standalone: true,
   imports: [CommonModule, NavigationComponent, FooterComponent],
   templateUrl: './assistance-payment.component.html',
-  styleUrl: './assistance-payment.component.scss',
   encapsulation: ViewEncapsulation.None,
 })
 export class AssistancePaymentComponent {}

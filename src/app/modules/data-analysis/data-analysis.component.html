@@ -1,95 +1,141 @@
 <div class="flex w-full flex-auto flex-col">
   <section class="flex flex-col">
-    <img
-      class="absolute inset-0 -z-20"
-      src="assets/background-banner-2.svg"
-      alt="background"
-    />
     <app-navigation class="mt-16" theme="dark"></app-navigation>
-    <article class="relative mt-18 flex flex-1 items-center justify-between">
-      <div
-        class="absolute right-0 -z-10 h-full w-3/5 rounded-3xl bg-zinc-100 bg-opacity-75"
-      ></div>
-      <div
-        class="absolute left-0 -z-10 h-full w-1/5 rounded-3xl bg-zinc-700"
-      ></div>
 
-      <div class="prose flex w-1/2 flex-col px-8 py-14">
-        <h1 class="text-center leading-relaxed text-zinc-700">
-          گزارشات شخصی سازی شده پرداخت ها
-        </h1>
-        <p class="text-justify text-2xl text-zinc-500">
-          iBpay مدیریت دسترسی بسیار ویژه و امنی ایجاد نموده تا کلیه مراحل ایجاد
-          پرداخت، تعیین اعتبار ، دریافت امضا ازامضاداران، پرداخت، ایجاد سند
-          پرداخت و اعتبارسنجی اسناد و... را عملیاتی کند.
-        </p>
-      </div>
-      <div class="relative flex w-1/2 items-center justify-start">
-        <div class="z-10 my-8 w-5/6 overflow-hidden rounded-3xl bg-white">
-          <img src="assets/dashbord-image-2.png" alt="Dashboard image" />
+    <article
+      class="bg-gradient-primary relative mt-18 flex flex-1 items-center justify-between rounded-xl px-12 py-20"
+    >
+      <div class="flex justify-center md:w-1/2">
+        <div class="prose flex flex-col text-white">
+          <h1 class="text-center leading-relaxed text-white">
+            گزارشات شخصی سازی شده پرداخت ها
+          </h1>
+          <p class="text-justify text-2xl">
+            iBpay مدیریت دسترسی بسیار ویژه و امنی ایجاد نموده تا کلیه مراحل
+            ایجاد پرداخت، تعیین اعتبار ، دریافت امضا ازامضاداران، پرداخت، ایجاد
+            سند پرداخت و اعتبارسنجی اسناد و... را عملیاتی کند.
+          </p>
         </div>
+      </div>
+      <div class="hidden items-center justify-center md:flex md:w-1/2">
+        <img
+          class="max-w-140"
+          src="assets/n-image-dashboard-data.png"
+          alt="Dashboard image"
+        />
       </div>
     </article>
   </section>
 
-  <section class="gradient flex w-full flex-col p-8 md:px-30 md:py-10">
+  <section class="flex w-full flex-col p-8 md:px-30 md:py-10">
     <div class="prose max-w-none">
-      <h2 class="text-center text-white">مزایا تحلیل و پردازش داده های مالی</h2>
+      <h1 class="text-center">مزایا تحلیل و پردازش داده های مالی</h1>
     </div>
     <div
-      class="prose mx-auto mt-10 grid max-w-320 grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-4"
+      class="prose mx-auto mt-14 grid max-w-360 grid-cols-1 gap-10 md:grid-cols-2"
     >
-      <div class="grid gap-3 rounded-lg bg-white p-10">
-        <h3 class="m-0 text-center">برنامه ریزی استراتژیک</h3>
-        <img
-          class="m-0 max-w-16 place-self-center"
-          src="assets/goal-svgrepo-com.svg"
-          alt=""
-        />
-        <p class="m-0 text-justify text-sm text-zinc-500">
+      <div
+        class="grid gap-3 rounded-lg bg-primary p-10 text-white md:rounded-ee-3xl md:rounded-ss-3xl"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            class="m-0 max-w-16"
+            src="assets/n-goal-svgrepo-com.svg"
+            alt=""
+          />
+          <h3 class="m-0 text-white">برنامه ریزی استراتژیک</h3>
+        </div>
+        <p class="m-0 text-justify text-sm text-white text-opacity-70">
           تجزیه و تحلیل داده های مالی با ارائه بینشی در مورد عملکرد و روندهای
           گذشته به برنامه ریزی استراتژیک کمک می کند و به تدوین استراتژی های
           تجاری موثر کمک می کند.
         </p>
       </div>
-      <div class="grid gap-3 rounded-lg bg-white p-10">
-        <h3 class="m-0 text-center">تجزیه و تحلیل هزینه</h3>
-        <img
-          class="m-0 max-w-16 place-self-center"
-          src="assets/increase-svgrepo-com.svg"
-          alt=""
-        />
-        <p class="m-0 text-justify text-sm text-zinc-500">
+
+      <div
+        class="grid gap-3 rounded-lg bg-primary p-10 text-white md:rounded-es-3xl md:rounded-se-3xl"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            class="m-0 max-w-16"
+            src="assets/n-increase-svgrepo-com.svg"
+            alt=""
+          />
+          <h3 class="m-0 text-white">تجزیه و تحلیل هزینه</h3>
+        </div>
+        <p class="m-0 text-justify text-sm text-white text-opacity-70">
           داده‌های مالی سازمان‌ها را قادر می‌سازد تا هزینه‌ها را در سطح دانه‌ای
           تجزیه و تحلیل کنند و مناطقی را که می‌توان هزینه‌ها را بدون به خطر
           انداختن عملکرد کاهش داد، شناسایی کرد.
         </p>
       </div>
-      <div class="grid gap-3 rounded-lg bg-white p-10">
-        <h3 class="m-0 text-center">شاخص‌های کلیدی عملکرد (KPI)</h3>
-        <img
-          class="m-0 max-w-16 place-self-center"
-          src="assets/minimize-svgrepo-com.svg"
-          alt=""
-        />
-        <p class="m-0 text-justify text-sm text-zinc-500">
+
+      <div
+        class="grid gap-3 rounded-lg bg-primary p-10 text-white md:rounded-es-3xl md:rounded-se-3xl"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            class="m-0 max-w-16"
+            src="assets/n-minimize-svgrepo-com.svg"
+            alt=""
+          />
+          <h3 class="m-0 text-white">شاخص‌های کلیدی عملکرد (KPI)</h3>
+        </div>
+        <p class="m-0 text-justify text-sm text-white text-opacity-70">
           داده‌های مالی به تعریف و نظارت بر KPI برای ارزیابی عملکرد افراد،
           بخش‌ها و کل سازمان کمک می‌کنند.
         </p>
       </div>
-      <div class="grid gap-3 rounded-lg bg-white p-10">
-        <h3 class="m-0 text-center">مدیریت ریسک</h3>
-        <img
-          class="m-0 max-w-16 place-self-center"
-          src="assets/security-card-svgrepo-com.svg"
-          alt=""
-        />
-        <p class="m-0 text-justify text-sm text-zinc-500">
+
+      <div
+        class="grid gap-3 rounded-lg bg-primary p-10 text-white md:rounded-ee-3xl md:rounded-ss-3xl"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            class="m-0 max-w-16"
+            src="assets/n-security-card-svgrepo-com.svg"
+            alt=""
+          />
+          <h3 class="m-0 text-white">مدیریت ریسک</h3>
+        </div>
+        <p class="m-0 text-justify text-sm text-white text-opacity-70">
           تجزیه و تحلیل داده‌های مالی به شناسایی ریسک‌ها و آسیب‌پذیری‌های بالقوه
           کمک می‌کند و به کسب‌وکارها اجازه می‌دهد تا اقدامات پیشگیرانه برای کاهش
           این خطرات را انجام دهند.
         </p>
       </div>
+    </div>
+  </section>
+
+  <section class="flex w-full flex-col p-8 md:px-30 md:py-10">
+    <div class="prose max-w-none">
+      <h1 class="text-center">سوالات متداول درباره مدل کسب وکار</h1>
+    </div>
+    <div class="prose mx-auto mt-14 grid w-full max-w-360 grid-cols-1 gap-10">
+      @for (item of list; track $index) {
+        <div class="flex w-full flex-col border-b pb-2">
+          <div
+            class="flex cursor-pointer items-center justify-between"
+            (click)="item.isOpen = !item.isOpen"
+            aria-hidden="true"
+          >
+            <span
+              class="me-4 text-xl font-medium"
+              [ngClass]="{ 'text-primary': item.isOpen }"
+            >
+              {{ item.title }}
+            </span>
+            <img
+              class="m-0 h-3 w-3"
+              [src]="item.isOpen ? 'assets/n-min.svg' : 'assets/n-add.svg'"
+              alt="add"
+            />
+          </div>
+          @if (item.isOpen) {
+            <div class="text-secondary mt-3 text-justify">{{ item.desc }}</div>
+          }
+        </div>
+      }
     </div>
   </section>
 

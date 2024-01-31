@@ -8,7 +8,6 @@ import { FooterComponent } from '../../shared/footer/footer.component';
   standalone: true,
   imports: [CommonModule, NavigationComponent, FooterComponent],
   templateUrl: './open-banking.component.html',
-  styleUrl: './open-banking.component.scss',
   encapsulation: ViewEncapsulation.None,
 })
 export class OpenBankingComponent {

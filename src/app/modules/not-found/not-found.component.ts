@@ -9,7 +9,6 @@ import { FooterComponent } from '../../shared/footer/footer.component';
   standalone: true,
   imports: [CommonModule, RouterModule, NavigationComponent, FooterComponent],
   templateUrl: './not-found.component.html',
-  styleUrl: './not-found.component.scss',
   encapsulation: ViewEncapsulation.None,
 })
 export class NotFoundComponent {}

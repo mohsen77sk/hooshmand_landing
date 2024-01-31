@@ -83,6 +83,14 @@
   .bg-gradient-primary-reverse {
     background: linear-gradient(107.77deg, #27272a 24.7%, #009688 100%);
   }
+
+  .bg-gradient-accent {
+    background: linear-gradient(259.34deg, #684fff 4.77%, #28282d 100%);
+  }
+
+  .bg-gradient-accent-reverse {
+    background: linear-gradient(259.34deg, #28282d 4.77%, #684fff 100%);
+  }
 }
 
 /* This injects Tailwind's component classes and any component classes registered by plugins. */
