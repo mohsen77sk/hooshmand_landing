@@ -84,12 +84,22 @@
     background: linear-gradient(107.77deg, #27272a 24.7%, #009688 100%);
   }
 
-  .bg-gradient-accent {
-    background: linear-gradient(259.34deg, #684fff 4.77%, #28282d 100%);
+  .bg-gradient-ipg {
+    background-image: url('assets/n-bg-header-ipg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .bg-gradient-accent-reverse {
-    background: linear-gradient(259.34deg, #28282d 4.77%, #684fff 100%);
+  .bg-gradient-data {
+    background-image: url('assets/n-bg-header-data.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-gradient-pay {
+    background-image: url('assets/n-bg-header-pay.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

@@ -32,7 +32,6 @@ module.exports = {
     extend: {
       colors: {
         primary: '#0d9488',
-        accent: '#221E63',
       },
       flex: {
         0: '0 0 auto',
