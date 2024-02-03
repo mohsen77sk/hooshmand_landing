@@ -13,7 +13,8 @@
           'text-white hover:bg-white': theme === 'light',
           'text-zinc-700 hover:bg-black': theme === 'dark'
         }"
-        [routerLink]="['/']"
+        [routerLink]="['/home']"
+        [routerLinkActive]="'!text-teal-500'"
       >
         صفحه اصلی
       </button>
@@ -42,6 +43,7 @@
                 'text-zinc-700 hover:bg-black': theme === 'dark'
               }"
               [routerLink]="['/open-banking']"
+              [routerLinkActive]="'!text-primary'"
             >
               خدمات بانکداری باز
             </button>
@@ -52,6 +54,7 @@
                 'text-zinc-700 hover:bg-black': theme === 'dark'
               }"
               [routerLink]="['/assistance-payment']"
+              [routerLinkActive]="'!text-primary'"
             >
               خدمات پرداخت یاری
             </button>
@@ -62,6 +65,7 @@
                 'text-zinc-700 hover:bg-black': theme === 'dark'
               }"
               [routerLink]="['/data-analysis']"
+              [routerLinkActive]="'!text-primary'"
             >
               پردازش داده ها
             </button>
@@ -75,6 +79,7 @@
           'text-zinc-700 hover:bg-black': theme === 'dark'
         }"
         [routerLink]="['/contact-us']"
+        [routerLinkActive]="'!text-primary'"
       >
         ارتباط با ما
       </button>
@@ -84,6 +89,8 @@
           'text-white hover:bg-white': theme === 'light',
           'text-zinc-700 hover:bg-black': theme === 'dark'
         }"
+        [routerLink]="['/about-us']"
+        [routerLinkActive]="'!text-primary'"
       >
         درباره ما
       </button>

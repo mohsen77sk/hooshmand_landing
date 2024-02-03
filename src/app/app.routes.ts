@@ -4,11 +4,17 @@ import { OpenBankingComponent } from './modules/open-banking/open-banking.compon
 import { DataAnalysisComponent } from './modules/data-analysis/data-analysis.component';
 import { AssistancePaymentComponent } from './modules/assistance-payment/assistance-payment.component';
 import { ContactUsComponent } from './modules/contact-us/contact-us.component';
+import { AboutUsComponent } from './modules/about-us/about-us.component';
 import { NotFoundComponent } from './modules/not-found/not-found.component';
 
 export const routes: Routes = [
   {
     path: '',
+    pathMatch: 'full',
+    redirectTo: 'home',
+  },
+  {
+    path: 'home',
     component: HomeComponent,
   },
   {
@@ -26,6 +32,10 @@ export const routes: Routes = [
   {
     path: 'contact-us',
     component: ContactUsComponent,
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
   },
   {
     path: 'not-found',
