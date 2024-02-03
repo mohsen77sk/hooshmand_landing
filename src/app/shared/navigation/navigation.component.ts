@@ -11,4 +11,27 @@ import { RouterModule } from '@angular/router';
 })
 export class NavigationComponent {
   @Input() theme: 'light' | 'dark' = 'light';
+
+  navigation: Array<{
+    name: string;
+    link?: string;
+    children?: { name: string; link: string }[];
+  }> = [
+    { name: 'صفحه اصلی', link: '/home' },
+    {
+      name: 'خدمات و محصولات',
+      children: [
+        { name: 'خدمات بانکداری باز', link: '/open-banking' },
+        { name: 'خدمات پرداخت یاری', link: '/assistance-payment' },
+        { name: 'پردازش داده ها', link: '/data-analysis' },
+      ],
+    },
+    { name: 'ارتباط با ما', link: '/contact-us' },
+    { name: 'درباره ما', link: '/about-us' },
+  ];
+
+  toggleNavigation(): void {
+    const backdrop = document.getElementById('drawer-backdrop');
+    backdrop?.classList.toggle('hidden');
+  }
 }

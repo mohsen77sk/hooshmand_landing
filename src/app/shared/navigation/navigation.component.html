@@ -13,6 +13,7 @@
           'text-white hover:bg-white': theme === 'light',
           'text-zinc-700 hover:bg-black': theme === 'dark'
         }"
+        (click)="toggleNavigation()"
         aria-hidden="true"
       >
         <svg
@@ -31,93 +32,56 @@
         </svg>
       </button>
 
-      <button
-        class="hidden h-14 rounded-full px-6 font-semibold transition hover:bg-opacity-10 sm:inline-block md:px-12"
-        [ngClass]="{
-          'text-white hover:bg-white': theme === 'light',
-          'text-zinc-700 hover:bg-black': theme === 'dark'
-        }"
-        [routerLink]="['/home']"
-        [routerLinkActive]="'!text-teal-500'"
-      >
-        صفحه اصلی
-      </button>
-      <button
-        class="dropdown group relative hidden h-14 rounded-full px-6 font-semibold transition hover:bg-opacity-10 sm:inline-block md:px-12"
-        [ngClass]="{
-          'text-white hover:bg-white': theme === 'light',
-          'text-zinc-700 hover:bg-black': theme === 'dark'
-        }"
-      >
-        خدمات و محصولات
-        <div
-          class="dropdown-menu absolute top-14 z-50 -mr-8 hidden h-auto w-full backdrop-blur group-hover:block md:-mr-12"
-        >
-          <div
-            class="rounded-b pt-2"
+      @for (nav of navigation; track nav.name) {
+        @if (nav.children && nav.children.length > 0) {
+          <button
+            class="dropdown group relative hidden h-14 rounded-full px-6 font-semibold transition hover:bg-opacity-10 sm:inline-block md:px-12"
             [ngClass]="{
-              'bg-white bg-opacity-10': theme === 'light',
-              'bg-gray-100': theme === 'dark'
+              'text-white hover:bg-white': theme === 'light',
+              'text-zinc-700 hover:bg-black': theme === 'dark'
             }"
           >
-            <button
-              class="h-14 w-full rounded px-6 font-semibold transition hover:bg-opacity-10"
-              [ngClass]="{
-                'text-white hover:bg-white': theme === 'light',
-                'text-zinc-700 hover:bg-black': theme === 'dark'
-              }"
-              [routerLink]="['/open-banking']"
-              [routerLinkActive]="'!text-primary'"
+            {{ nav.name }}
+            <div
+              class="dropdown-menu absolute top-14 z-50 -mr-8 hidden h-auto w-full backdrop-blur group-hover:block md:-mr-12"
             >
-              خدمات بانکداری باز
-            </button>
-            <button
-              class="h-14 w-full rounded px-6 font-semibold transition hover:bg-opacity-10"
-              [ngClass]="{
-                'text-white hover:bg-white': theme === 'light',
-                'text-zinc-700 hover:bg-black': theme === 'dark'
-              }"
-              [routerLink]="['/assistance-payment']"
-              [routerLinkActive]="'!text-primary'"
-            >
-              خدمات پرداخت یاری
-            </button>
-            <button
-              class="h-14 w-full rounded px-6 font-semibold transition hover:bg-opacity-10"
-              [ngClass]="{
-                'text-white hover:bg-white': theme === 'light',
-                'text-zinc-700 hover:bg-black': theme === 'dark'
-              }"
-              [routerLink]="['/data-analysis']"
-              [routerLinkActive]="'!text-primary'"
-            >
-              پردازش داده ها
-            </button>
-          </div>
-        </div>
-      </button>
-      <button
-        class="hidden h-14 rounded-full px-6 font-semibold transition hover:bg-opacity-10 sm:inline-block md:px-12"
-        [ngClass]="{
-          'text-white hover:bg-white': theme === 'light',
-          'text-zinc-700 hover:bg-black': theme === 'dark'
-        }"
-        [routerLink]="['/contact-us']"
-        [routerLinkActive]="'!text-primary'"
-      >
-        ارتباط با ما
-      </button>
-      <button
-        class="hidden h-14 rounded-full px-6 font-semibold transition hover:bg-opacity-10 sm:inline-block md:px-12"
-        [ngClass]="{
-          'text-white hover:bg-white': theme === 'light',
-          'text-zinc-700 hover:bg-black': theme === 'dark'
-        }"
-        [routerLink]="['/about-us']"
-        [routerLinkActive]="'!text-primary'"
-      >
-        درباره ما
-      </button>
+              <div
+                class="rounded-b pt-2"
+                [ngClass]="{
+                  'bg-white bg-opacity-10': theme === 'light',
+                  'bg-gray-100': theme === 'dark'
+                }"
+              >
+                @for (n of nav.children; track n.name) {
+                  <button
+                    class="h-14 w-full rounded px-6 font-semibold transition hover:bg-opacity-10"
+                    [ngClass]="{
+                      'text-white hover:bg-white': theme === 'light',
+                      'text-zinc-700 hover:bg-black': theme === 'dark'
+                    }"
+                    [routerLink]="[n.link]"
+                    [routerLinkActive]="'!text-primary'"
+                  >
+                    {{ n.name }}
+                  </button>
+                }
+              </div>
+            </div>
+          </button>
+        } @else {
+          <button
+            class="hidden h-14 rounded-full px-6 font-semibold transition hover:bg-opacity-10 sm:inline-block md:px-12"
+            [ngClass]="{
+              'text-white hover:bg-white': theme === 'light',
+              'text-zinc-700 hover:bg-black': theme === 'dark'
+            }"
+            [routerLink]="[nav.link]"
+            [routerLinkActive]="'!text-teal-500'"
+          >
+            {{ nav.name }}
+          </button>
+        }
+      }
     </div>
   </div>
   <div class="flex items-center">
@@ -130,3 +94,52 @@
     />
   </div>
 </nav>
+
+<!-- Drawer -->
+<div
+  id="drawer-backdrop"
+  class="absolute bottom-0 left-0 right-0 top-0 z-40 hidden h-full w-full bg-gray-900/50"
+  (click)="toggleNavigation()"
+  aria-hidden="true"
+>
+  <div
+    id="drawer-navigation"
+    class="fixed right-0 top-0 z-50 h-screen w-60 -translate-x-full transform-none overflow-y-auto bg-white p-4"
+    tabindex="-1"
+  >
+    <div class="overflow-y-auto py-4">
+      <ul class="space-y-2 font-medium">
+        <li>
+          @for (nav of navigation; track nav.name) {
+            @if (nav.children && nav.children.length > 0) {
+              <div
+                class="flex items-center rounded-lg p-2"
+                (click)="$event.stopPropagation()"
+              >
+                {{ nav.name }}
+              </div>
+            } @else {
+              <a
+                class="flex items-center rounded-lg p-2"
+                [routerLink]="[nav.link]"
+                routerLinkActive="bg-primary text-white"
+              >
+                {{ nav.name }}
+              </a>
+            }
+
+            @for (n of nav.children; track n.name) {
+              <a
+                class="flex items-center rounded-lg p-2 pr-6"
+                [routerLink]="[n.link]"
+                routerLinkActive="bg-primary text-white"
+              >
+                {{ n.name }}
+              </a>
+            }
+          }
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

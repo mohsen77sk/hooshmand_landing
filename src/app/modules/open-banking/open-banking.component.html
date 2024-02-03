@@ -43,7 +43,7 @@
     <div class="rounded-full bg-zinc-100 px-13 py-5 font-bold text-zinc-700">
       نحوه عملکرد
     </div>
-    <div class="mt-12 grid w-full grid-cols-4 gap-4">
+    <div class="mt-12 grid w-full grid-cols-2 gap-4 sm:grid-cols-4">
       <button
         class="h-16 w-full rounded-xl bg-gray-50 font-bold"
         [ngClass]="{ 'bg-primary text-white': performance === 4 }"
@@ -174,7 +174,9 @@
           <h2 class="mb-0 text-primary">+12میلیون</h2>
           <span class="text-secondary">تعداد تراکنش ها</span>
         </div>
-        <div class="prose mx-12 border-x border-dashed border-primary px-12">
+        <div
+          class="prose mx-6 border-x border-dashed border-primary px-6 sm:mx-12 sm:px-12"
+        >
           <h2 class="mb-0 text-primary">99.8%</h2>
           <span class="text-secondary">نرخ موفقیت تراکنش ها</span>
         </div>
