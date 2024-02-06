@@ -84,6 +84,13 @@
     background: linear-gradient(107.77deg, #27272a 24.7%, #009688 100%);
   }
 
+  .bg-gradient-home {
+    background-image: url('assets/n-background-header.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .bg-gradient-ipg {
     background-image: url('assets/n-bg-header-ipg.svg');
     background-repeat: no-repeat;
